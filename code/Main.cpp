@@ -134,14 +134,14 @@ int CALLBACK WinMain(
 	WindowClass.lpfnWndProc = WindowCallBack;
 	WindowClass.hInstance=hInstance;
 	//WindowClass.hIcon;
-	WindowClass.lpszClassName="Handmade Hero";
+	WindowClass.lpszClassName="ProgrammingClubGame";
 	
 	RegisterClass(&WindowClass);
 	
 	HWND WinHandle = CreateWindowEx(
 	0,
     WindowClass.lpszClassName,
-    "First Handmade Window",
+    "ProgrammingClubGame",//this will need a name eventually
     (WS_OVERLAPPEDWINDOW|WS_VISIBLE),
     CW_USEDEFAULT,
     CW_USEDEFAULT,
