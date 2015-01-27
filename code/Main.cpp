@@ -17,7 +17,8 @@ void RenderWeirdGradient(int XOffset, int YOffset){
 	for(int Y = 0;Y<Height;Y++){
 		unsigned char *Pixel= (unsigned char*)Row;
 		for(int X = 0;X<Width;X++){
-			
+		//these lines of code bother Blake
+		
 			*Pixel = (unsigned char)X+XOffset; 
 			++Pixel;
 			*Pixel = 0;
@@ -26,7 +27,7 @@ void RenderWeirdGradient(int XOffset, int YOffset){
 			++Pixel;
 			*Pixel = 0;
 			++Pixel;
-						
+			
 		}
 		Row+=Pitch;
 	}
