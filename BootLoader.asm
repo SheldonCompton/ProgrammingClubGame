@@ -8,18 +8,18 @@ mov ax, 0x9000 ;Set up stack
 mov ss, ax     ;Tell processor where stack is
 mov sp, 0xFB00 ;Set stack offset
 sti
-
+mov ah, 0eh
+mov si, LoadingMessage
 jmp printMessage
 
 printMessage:
-mov ah, 0eh
-mov si, LoadingMessage
 
 lodsb
-cmp ah,0
+cmp al,0
 jz .done
 int 10h
 jmp printMessage
+
 .done:
 jmp $
 
