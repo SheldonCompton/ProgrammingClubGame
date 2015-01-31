@@ -14,12 +14,12 @@ jmp printMessage
 printMessage:
 mov ah, 0eh
 mov si, LoadingMessage
-.loop:
+
 lodsb
 cmp ah,0
 jz .done
 int 10h
-jmp .loop
+jmp printMessage
 .done:
 jmp $
 
