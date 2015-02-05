@@ -9,7 +9,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 use16           ; use 16 bit real mode
-org     7c00h   ; BIOS origin has to be 7C00 hex for some reason
+org     0x7c00   ; BIOS origin has to be 7C00 hex for some reason
 
 
 ;@0o.o0@0o.o0@0o.o0@0o.o0@;
@@ -38,4 +38,4 @@ out     61h, al         ; output new value back into 61h
 ;@0o.o0@0o.o0@0o.o0@0o.o0@;
 
 times   510-($-$$) db 0 ; fill remaining space in sector with zeroes
-dw      aa55h           ; tell BIOS we are an OS
+dw      0xaa55           ; tell BIOS we are an OS
