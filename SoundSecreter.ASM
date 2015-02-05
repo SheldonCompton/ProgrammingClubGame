@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Sudokuu's Superior Sound Secreter
-; Version: acid.0
-; Last Revised: 2015 Feb 03 22:10
+; Version: acid.1
+; Last Revised: 2015 Feb 04 23:58
 ;
 ; Notes: This is the BIOS version of the
 ; code so it can be run as stand-alone
@@ -36,3 +36,6 @@ in      al, 61h         ; get value of 61h
 and     al, 11111100b   ; set the two rightmost bits to 0
 out     61h, al         ; output new value back into 61h
 ;@0o.o0@0o.o0@0o.o0@0o.o0@;
+
+times   510-($-$$) db 0 ; fill remaining space in sector with zeroes
+dw      aa55h           ; tell BIOS we are an OS
