@@ -1,5 +1,5 @@
-use16
-org 0x0000
+org 0x9000
+
 jmp main
 
 main:
