@@ -1,41 +1,45 @@
 org 7C00h
 
+;;;;;;;;;;;;;;;;;;;
+;DO NOT MODIFY DL!;
+;;;;;;;;;;;;;;;;;;;
 
 jmp 0x0:start
 
 start:
 cli
-mov ax, 0x9000 ;Set up stack
-mov ss, ax     ;Tell processor where stack is
-mov sp, 0xFB00 ;Set stack offset
+xor ax,ax
+mov ds,ax
+mov es,ax
+mov ss,ax
+mov sp,0x7C00
 sti
-
 
 mov ah, 0x0e
 mov al, '1'
 int 0x10
 
-mov ah, 0x42 ;extended read function
-int 0x13
-cmp ah,0
-jne error
+mov ah, 0x42
 
-jmp 	0x880:0xFB00	;jump to the loaded kernel
+int 0x13
+jc error
+
+jmp	0x0:0x0		;jump to the loaded kernel
 
 error:
 mov ah, 0x0e
-mov al, 'Y'	
+mov al, 'E'	
 int 0x10
 
-
 DiskAddressPacket:
-db 0x10		;size
-db 0		
-dw 0x20		;# of sectors to transfer
-dw 0x0		;transfer buffer (16bitsegment:16bitoffset)
-dw 0		;page 0
-dd 1		
-dd 0
+db 0x10		;size of packet
+db 0x0		;reserved
+dw 0x1		;number of blocks to transfer
+dw 0x0		;where in memory to load to
+dw 0x0		;offset
+dq 0x1		;starting block to read
+dq 0x0
+
 
 times 510-($-$$) db 0 ;Fill rest of sector up with 0s to make this 512B (a sector)
 dw 0xAA55             ;Let BIOS know this is an OS
