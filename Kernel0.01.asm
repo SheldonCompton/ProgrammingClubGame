@@ -1,4 +1,3 @@
-org 0x0000
 jmp main
 
 main:
