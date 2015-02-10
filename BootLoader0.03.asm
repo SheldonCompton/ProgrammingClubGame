@@ -2,6 +2,12 @@ org 7C00h
 
 ;;;;;;;;;;;;;;;;;;
 ;DO NOT MODIFY DL;
+;LOL NOPE FUCK TH;
+;E SYS WAKE UP SH;
+;EEPLE AND WALK Y;
+;OUR OWN WAY IN L;
+;IFE. HAVEANICEDA;
+;YBYEBYE         ;
 ;;;;;;;;;;;;;;;;;;
 
 jmp start
