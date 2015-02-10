@@ -1,3 +1,4 @@
+;Kernel
 jmp main
 
 main:
