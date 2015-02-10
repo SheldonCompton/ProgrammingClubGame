@@ -42,7 +42,7 @@ db 0x0		;reserved
 dw 0x1		;number of blocks to transfer
 dw 0xA00	;where in memory to write to
 dw 0x200	;offset
-dq 0x1		;starting block to read
+dq 0x2		;starting block to read
 dd 0x0
 
 times 510-($-$$) db 0 ;Fill rest of sector up with 0s to make this 512B (a sector)

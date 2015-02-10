@@ -7,7 +7,7 @@ mov ss, ax     ;Tell processor where stack is
 mov sp, 0xFB00 ;Set stack offset
 sti
 
-mov al, 'S'
+mov al, '2'
 mov ah, 0x0e
 int 0x10
 
