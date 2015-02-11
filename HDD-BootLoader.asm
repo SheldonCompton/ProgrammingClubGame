@@ -1,19 +1,12 @@
 use16
 org 7C00h
 
-;;;;;;;;;;;;;;;;;;
-;DO NOT MODIFY DL;
-;LOL NOPE FUCK TH;
-;E SYS WAKE UP SH;
-;EEPLE AND WALK Y;
-;OUR OWN WAY IN L;
-;IFE. HAVEANICEDA;
-;YBYEBYE         ;
-;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;BOOTLOADER FOR HDD AND USB DRIVES EMULATING HDD;
+;DO NOT MODIFY REGISTER DL                      ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 jmp start
-
-
 
 start:
 
