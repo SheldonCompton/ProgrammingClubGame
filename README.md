@@ -1,5 +1,5 @@
 # ProgrammingClubGame
 
-This project is to ultimately become a bootable game, written in pure x86 ASM.
+This project is to write a game in C using OpenGL.
 
 THE END
