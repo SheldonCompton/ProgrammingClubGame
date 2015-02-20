@@ -1,14 +1,7 @@
-# Programming Club Code Vat
+# Programming Club Translator
 
-Our goal is to do whatever the fuck we or you or they want.
-
-It is recommended you form a new branch for each project, that way issues for one project do not show up on the others.
-
-Sharing ideas and solutions is encouraged, but _DO NOT FUCK_ with someone else's code without their explicit permission.
-
-If you have a problem with people copying your code for their own use with or without your permission, then do not post your code to GitHub. Anything posted here is subject to free use by all within our horde.
-
-Completed Projects, if any may ever arise, shall be moved into the "Completed Projects" Branch.
-
-
-Remember, Have Fun; Be Productive; Or Don't, We Could Care Less.
+This will be a project to provide quick translations for uncommon things.
+First I will be writting a English to Morse Code translation.(after I quickly learn Morse Code)
+Other ideas would be English to ascii,  English to piglatin,  English to a self created language.
+At first the code probably won't be very pretty, but over time I'll try to keep it organized and
+semi-fast.
