@@ -4,9 +4,7 @@
 
 int main(){
 			char input[100];
-while(1){
-Morse();
-}		
+		
 			while(1){
 			puts("What would you like to translate to?");
 			fgets(input,100,stdin); 	//(Sheldon)(string,max num of chars to copy,stream)
