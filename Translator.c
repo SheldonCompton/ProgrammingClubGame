@@ -48,55 +48,55 @@ tester=97;	//(Sheldon)a in ascii
 //(Sheldon)get ready for the ugliest block of code ever
 if(input[counter]==tester){buffer[writingpoint]='.';buffer[++writingpoint]='-';buffer[++writingpoint]='-';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='.';buffer[++writingpoint]='.';buffer[++writingpoint]='.';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='.';buffer[++writingpoint]='.';buffer[++writingpoint]='.';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='.';buffer[++writingpoint]='-';buffer[++writingpoint]='.';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='.';buffer[++writingpoint]='-';buffer[++writingpoint]='.';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='.';buffer[++writingpoint]='.';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='.';buffer[++writingpoint]='.';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='.';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='.';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='.';buffer[++writingpoint]='.';buffer[++writingpoint]='-';buffer[++writingpoint]='.';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='.';buffer[++writingpoint]='.';buffer[++writingpoint]='-';buffer[++writingpoint]='.';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='-';buffer[++writingpoint]='.';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='-';buffer[++writingpoint]='.';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='.';buffer[++writingpoint]='.';buffer[++writingpoint]='.';buffer[++writingpoint]='.';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='.';buffer[++writingpoint]='.';buffer[++writingpoint]='.';buffer[++writingpoint]='.';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='.';buffer[++writingpoint]='.';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='.';buffer[++writingpoint]='.';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='.';buffer[++writingpoint]='-';buffer[++writingpoint]='-';buffer[++writingpoint]='-';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='.';buffer[++writingpoint]='-';buffer[++writingpoint]='-';buffer[++writingpoint]='-';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='.';buffer[++writingpoint]='-';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='.';buffer[++writingpoint]='-';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='.';buffer[++writingpoint]='-';buffer[++writingpoint]='.';buffer[++writingpoint]='.';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='.';buffer[++writingpoint]='-';buffer[++writingpoint]='.';buffer[++writingpoint]='.';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='-';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='-';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='.';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='.';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='-';buffer[++writingpoint]='-';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='-';buffer[++writingpoint]='-';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='.';buffer[++writingpoint]='-';buffer[++writingpoint]='-';buffer[++writingpoint]='.';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='.';buffer[++writingpoint]='-';buffer[++writingpoint]='-';buffer[++writingpoint]='.';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='-';buffer[++writingpoint]='.';buffer[++writingpoint]='-';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='-';buffer[++writingpoint]='.';buffer[++writingpoint]='-';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='.';buffer[++writingpoint]='-';buffer[++writingpoint]='.';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='.';buffer[++writingpoint]='-';buffer[++writingpoint]='.';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='.';buffer[++writingpoint]='.';buffer[++writingpoint]='.';;writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='.';buffer[++writingpoint]='.';buffer[++writingpoint]='.';;writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='-';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='-';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='.';buffer[++writingpoint]='.';buffer[++writingpoint]='-';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='.';buffer[++writingpoint]='.';buffer[++writingpoint]='-';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='.';buffer[++writingpoint]='.';buffer[++writingpoint]='.';buffer[++writingpoint]='-';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='.';buffer[++writingpoint]='.';buffer[++writingpoint]='.';buffer[++writingpoint]='-';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='.';buffer[++writingpoint]='-';buffer[++writingpoint]='-';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='.';buffer[++writingpoint]='-';buffer[++writingpoint]='-';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='.';buffer[++writingpoint]='.';buffer[++writingpoint]='-';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='.';buffer[++writingpoint]='.';buffer[++writingpoint]='-';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='.';buffer[++writingpoint]='-';buffer[++writingpoint]='-';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='.';buffer[++writingpoint]='-';buffer[++writingpoint]='-';writingpoint++;}
 tester++;
-if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='-';buffer[++writingpoint]='.';buffer[++writingpoint]='.';writingpoint++;}
+else if(input[counter]==tester){buffer[writingpoint]='-';buffer[++writingpoint]='-';buffer[++writingpoint]='.';buffer[++writingpoint]='.';writingpoint++;}
 }
 printf("%s\n",buffer);
 for(counter=0;counter<5001;counter++){
