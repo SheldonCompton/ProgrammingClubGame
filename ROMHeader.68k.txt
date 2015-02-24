@@ -1,3 +1,4 @@
+;;;;;;;;;;;Please note that the ROM header will not work until I create a certain runtime environment;;;;;;;;
 ; ******************************************************************
 ; Sega Megadrive ROM header
 ; ******************************************************************
@@ -85,3 +86,175 @@ dc.l 0x00000000                                         ; Unused
 dc.l 0x00000000                                         ; Unused
 dc.b "                                        "         ; Notes (unused)
 dc.b "JUE             "                                 ; Country codes
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+Palette:
+   dc.w 0x0000 ; Color 0 - Transparent			;Subroutine to init initial VDP color palette.
+   dc.w 0x000E ; Color 1 - Red				;If more colors are desired, the VDP supports		
+   dc.w 0x00E0 ; Color 2 - Green			;special "highlight" and "shadow" modes.
+   dc.w 0x0E00 ; Color 3 - Blue
+   dc.w 0x0000 ; Color 4 - Black
+   dc.w 0x0EEE ; Color 5 - White
+   dc.w 0x00EE ; Color 6 - Yellow
+   dc.w 0x008E ; Color 7 - Orange
+   dc.w 0x0E0E ; Color 8 - Pink
+   dc.w 0x0808 ; Color 9 - Purple
+   dc.w 0x0444 ; Color A - Dark grey
+   dc.w 0x0888 ; Color B - Light grey
+   dc.w 0x0EE0 ; Color C - Turquoise
+   dc.w 0x000A ; Color D - Maroon
+   dc.w 0x0600 ; Color E - Navy blue
+   dc.w 0x0060 ; Color F - Dark green
+
+;;;;;;;; Super font data will be created here...;;;;;;;;
+;;;Remember, "BBAA AAAA AAAA AAAA 0000 0000 BBBB 00AA";;
+ASCIIA:
+   dc.l 0x11111111
+   dc.l 0x11000011
+   dc.l 0x11000011
+   dc.l 0x11111111
+   dc.l 0x11000011
+   dc.l 0x11000011
+   dc.l 0x11000011
+   dc.l 0x11000011
+ASCIIB:
+   dc.l 0x11111000
+   dc.l 0x11001100
+   dc.l 0x11001100
+   dc.l 0x11001100
+   dc.l 0x11111111
+   dc.l 0x11000011
+   dc.l 0x11000011
+   dc.l 0x11111111
+ASCIIC:
+   dc.l 0x11111111
+   dc.l 0x11111111
+   dc.l 0x11000000
+   dc.l 0x11000000
+   dc.l 0x11000000
+   dc.l 0x11000000
+   dc.l 0x11111111
+   dc.l 0x11111111
+ASCIID:
+   dc.l 0x11111000
+   dc.l 0x11001110
+   dc.l 0x11000110
+   dc.l 0x11000110
+   dc.l 0x11000110
+   dc.l 0x11001110
+   dc.l 0x11111000
+   dc.l 0x00000000
+ASCIIE:
+   dc.l 0x11111110
+   dc.l 0x11000000
+   dc.l 0x11000000
+   dc.l 0x11111110
+   dc.l 0x11000000
+   dc.l 0x11000000
+   dc.l 0x11111110
+   dc.l 0x00000000
+ASCIIF:
+   dc.l 0x11111111
+   dc.l 0x11111111
+   dc.l 0x11000000
+   dc.l 0x11111111
+   dc.l 0x11111111
+   dc.l 0x11000000
+   dc.l 0x11000000
+   dc.l 0x11000000
+ASCIIG:
+   dc.l 0x11111111
+   dc.l 0x11111111
+   dc.l 0x11000000
+   dc.l 0x11001111
+   dc.l 0x11001111
+   dc.l 0x11000011
+   dc.l 0x11111111
+   dc.l 0x11111111
+ASCIIH:
+   dc.l 0x11000110
+   dc.l 0x11000110
+   dc.l 0x11000110
+   dc.l 0x11111110
+   dc.l 0x11000110
+   dc.l 0x11000110
+   dc.l 0x11000110
+   dc.l 0x00000000
+ASCIII:
+   dc.l 0x11111111
+   dc.l 0x11111111
+   dc.l 0x00011000
+   dc.l 0x00011000
+   dc.l 0x00011000
+   dc.l 0x00011000
+   dc.l 0x11111111
+   dc.l 0x11111111
+ASCIIJ:
+   dc.l 0x11111111
+   dc.l 0x11111111
+   dc.l 0x00011000
+   dc.l 0x00011000
+   dc.l 0x00011000
+   dc.l 0x00011000
+   dc.l 0x11111000
+   dc.l 0x11111000
+ASCIIK:
+   dc.l 0x11000111
+   dc.l 0x11001100
+   dc.l 0x11011000
+   dc.l 0x11100000
+   dc.l 0x11100000
+   dc.l 0x11011000
+   dc.l 0x11000110
+   dc.l 0x11000011
+ASCIIL:
+   dc.l 0x11000000
+   dc.l 0x11000000
+   dc.l 0x11000000
+   dc.l 0x11000000
+   dc.l 0x11000000
+   dc.l 0x11111110
+   dc.l 0x11111110
+   dc.l 0x00000000
+ASCIIM:
+   dc.l 0x11111111
+   dc.l 0x11111111
+   dc.l 0x11011011
+   dc.l 0x11011011
+   dc.l 0x11011011
+   dc.l 0x11011011
+   dc.l 0x11011011
+   dc.l 0x11011011
+ASCIIN:
+   dc.l 0x11000011
+   dc.l 0x11000111
+   dc.l 0x11001111
+   dc.l 0x11111011;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ASCIIO:
+   dc.l 0x01111100
+   dc.l 0x11101110
+   dc.l 0x11000110
+   dc.l 0x11000110
+   dc.l 0x11000110
+   dc.l 0x11101110
+   dc.l 0x01111100
+   dc.l 0x00000000
+ASCIIW:
+   dc.l 0x11000110
+   dc.l 0x11000110
+   dc.l 0x11000110
+   dc.l 0x11000110
+   dc.l 0x11010110
+   dc.l 0x11101110
+   dc.l 0x11000110
+   dc.l 0x00000000
+ASCIIR:
+   dc.l 0x11111100
+   dc.l 0x11000110
+   dc.l 0x11001100
+   dc.l 0x11111100
+   dc.l 0x11001110
+   dc.l 0x11000110
+   dc.l 0x11000110
+   dc.l 0x00000000
