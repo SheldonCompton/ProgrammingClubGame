@@ -110,7 +110,6 @@ Palette:
 ;;;;;;;; Super font data will be created here...;;;;;;;;
 ;;;Remember, "BBAA AAAA AAAA AAAA 0000 0000 BBBB 00AA";;
 
-CharA:
    dc.l 0x00000000
    dc.l 0x00011000
    dc.l 0x00100100
@@ -119,7 +118,7 @@ CharA:
    dc.l 0x00100100
    dc.l 0x00100100
    dc.l 0x00000000
-CharB:
+
    dc.l 0x00000000
    dc.l 0x00111000
    dc.l 0x00100100
@@ -128,7 +127,7 @@ CharB:
    dc.l 0x00100100
    dc.l 0x00111000
    dc.l 0x00000000
-CharC:
+
    dc.l 0x00000000
    dc.l 0x00011000
    dc.l 0x00100100
@@ -137,7 +136,7 @@ CharC:
    dc.l 0x00100100
    dc.l 0x00011000
    dc.l 0x00000000
-CharD:
+
    dc.l 0x00000000
    dc.l 0x00111000
    dc.l 0x00100100
@@ -146,7 +145,7 @@ CharD:
    dc.l 0x00100100
    dc.l 0x00111000
    dc.l 0x00000000
-CharE:
+
    dc.l 0x00000000
    dc.l 0x00111100
    dc.l 0x00100000
@@ -155,7 +154,7 @@ CharE:
    dc.l 0x00100000
    dc.l 0x00111100
    dc.l 0x00000000
-CharF:
+
    dc.l 0x00000000
    dc.l 0x00111100
    dc.l 0x00100000
@@ -164,7 +163,7 @@ CharF:
    dc.l 0x00100000
    dc.l 0x00100000
    dc.l 0x00000000
-CharG:
+
    dc.l 0x00000000
    dc.l 0x00011000
    dc.l 0x00100100
@@ -173,7 +172,7 @@ CharG:
    dc.l 0x00100100
    dc.l 0x00011000
    dc.l 0x00000000
-charH:
+
    dc.l 0x00000000
    dc.l 0x00100100
    dc.l 0x00100100
@@ -182,7 +181,7 @@ charH:
    dc.l 0x00100100
    dc.l 0x00100100
    dc.l 0x00000000
-CharI:
+
    dc.l 0x00000000
    dc.l 0x00111000
    dc.l 0x00010000
@@ -191,7 +190,7 @@ CharI:
    dc.l 0x00010000
    dc.l 0x00111000
    dc.l 0x00000000
-CharJ:
+
    dc.l 0x00000000
    dc.l 0x00000100
    dc.l 0x00000100
@@ -200,7 +199,7 @@ CharJ:
    dc.l 0x00100100
    dc.l 0x00011000
    dc.l 0x00000000
-CharK:
+
    dc.l 0x00000000
    dc.l 0x00101000
    dc.l 0x00101000
@@ -209,7 +208,7 @@ CharK:
    dc.l 0x00100100
    dc.l 0x00100100
    dc.l 0x00000000
-charL:
+
    dc.l 0x00000000
    dc.l 0x00100000
    dc.l 0x00100000
@@ -218,7 +217,7 @@ charL:
    dc.l 0x00100000
    dc.l 0x00111100
    dc.l 0x00000000
-CharM:
+
    dc.l 0x00000000
    dc.l 0x01000100
    dc.l 0x01101100
@@ -227,7 +226,7 @@ CharM:
    dc.l 0x01000100
    dc.l 0x01000100
    dc.l 0x00000000
-CharN:
+
    dc.l 0x00000000
    dc.l 0x00100100
    dc.l 0x00110100
@@ -236,7 +235,7 @@ CharN:
    dc.l 0x00101100
    dc.l 0x00100100
    dc.l 0x00000000
-CharO:
+
    dc.l 0x00000000
    dc.l 0x00011000
    dc.l 0x00100100
@@ -245,7 +244,7 @@ CharO:
    dc.l 0x00100100
    dc.l 0x00011000
    dc.l 0x00000000
-CharP:
+
    dc.l 0x00000000
    dc.l 0x00111000
    dc.l 0x00100100
@@ -254,7 +253,7 @@ CharP:
    dc.l 0x00100000
    dc.l 0x00100000
    dc.l 0x00000000
-CharQ:
+
    dc.l 0x00000000
    dc.l 0x00011000
    dc.l 0x00100100
@@ -263,7 +262,7 @@ CharQ:
    dc.l 0x00100100
    dc.l 0x00011100
    dc.l 0x00000010
-CharR;
+
    dc.l 0x00000000
    dc.l 0x00111000
    dc.l 0x00100100
@@ -272,7 +271,7 @@ CharR;
    dc.l 0x00100100
    dc.l 0x00100100
    dc.l 0x00000000
-CharS:
+
    dc.l 0x00000000
    dc.l 0x00011100
    dc.l 0x00100000
@@ -281,7 +280,7 @@ CharS:
    dc.l 0x00000100
    dc.l 0x00111000
    dc.l 0x00000000
-CharT:
+
    dc.l 0x00000000
    dc.l 0x00111000
    dc.l 0x00010000
@@ -290,7 +289,7 @@ CharT:
    dc.l 0x00010000
    dc.l 0x00010000
    dc.l 0x00000000
-CharU:
+
    dc.l 0x00000000
    dc.l 0x00100100
    dc.l 0x00100100
@@ -299,7 +298,7 @@ CharU:
    dc.l 0x00100100
    dc.l 0x00111100
    dc.l 0x00000000
-CharV:
+
    dc.l 0x00000000
    dc.l 0x00100100
    dc.l 0x00100100
@@ -308,7 +307,7 @@ CharV:
    dc.l 0x00010100
    dc.l 0x00001100
    dc.l 0x00000000
-CharW:
+
    dc.l 0x00000000
    dc.l 0x01000100
    dc.l 0x01000100
@@ -317,7 +316,7 @@ CharW:
    dc.l 0x01101100
    dc.l 0x01000100
    dc.l 0x00000000
-CharX:
+
    dc.l 0x00000000
    dc.l 0x00100100
    dc.l 0x00100100
@@ -326,7 +325,7 @@ CharX:
    dc.l 0x00100100
    dc.l 0x00100100
    dc.l 0x00000000
-CharY:
+
    dc.l 0x00000000
    dc.l 0x00100010
    dc.l 0x00100010
@@ -335,7 +334,7 @@ CharY:
    dc.l 0x00001000
    dc.l 0x00001000
    dc.l 0x00000000
-CharZ:
+
    dc.l 0x00000000
    dc.l 0x00111100
    dc.l 0x00000100
