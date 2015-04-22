@@ -110,6 +110,9 @@ Palette:
 ;;;;;;;; Super font data will be created here...;;;;;;;;
 ;;;Remember, "BBAA AAAA AAAA AAAA 0000 0000 BBBB 00AA";;
 
+VDPFont:
+   move.l 0x00C00000, a4
+   move.l 0x00C00004, a5
    dc.l 0x00000000
    dc.l 0x00011000
    dc.l 0x00100100

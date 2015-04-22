@@ -1,0 +1,672 @@
+00000000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.15.02
+Created On: 4/22/2015 9:20:07 AM
+
+00000000                             1  ;;;;;;;;;;;Please note that the ROM header will not work until I create a certain runtime environment;;;;;;;;
+00000000                             2  ; ******************************************************************
+00000000                             3  ; Sega Megadrive ROM header
+00000000                             4  ; ******************************************************************
+Line 5 ERROR: Invalid opcode
+00000000                             5  dc.l   0x00FFE000      ; Initial stack pointer value
+Line 6 ERROR: Invalid opcode
+00000000                             6  dc.l   EntryPoint      ; Start of program
+Line 7 ERROR: Invalid opcode
+00000000                             7  dc.l   Exception       ; Bus error
+Line 8 ERROR: Invalid opcode
+00000000                             8  dc.l   Exception       ; Address error
+Line 9 ERROR: Invalid opcode
+00000000                             9  dc.l   Exception       ; Illegal instruction
+Line 10 ERROR: Invalid opcode
+00000000                            10  dc.l   Exception       ; Division by zero
+Line 11 ERROR: Invalid opcode
+00000000                            11  dc.l   Exception       ; CHK exception
+Line 12 ERROR: Invalid opcode
+00000000                            12  dc.l   Exception       ; TRAPV exception
+Line 13 ERROR: Invalid opcode
+00000000                            13  dc.l   Exception       ; Privilege violation
+Line 14 ERROR: Invalid opcode
+00000000                            14  dc.l   Exception       ; TRACE exception
+Line 15 ERROR: Invalid opcode
+00000000                            15  dc.l   Exception       ; Line-A emulator
+Line 16 ERROR: Invalid opcode
+00000000                            16  dc.l   Exception       ; Line-F emulator
+Line 17 ERROR: Invalid opcode
+00000000                            17  dc.l   Exception       ; Unused (reserved)
+Line 18 ERROR: Invalid opcode
+00000000                            18  dc.l   Exception       ; Unused (reserved)
+Line 19 ERROR: Invalid opcode
+00000000                            19  dc.l   Exception       ; Unused (reserved)
+Line 20 ERROR: Invalid opcode
+00000000                            20  dc.l   Exception       ; Unused (reserved)
+Line 21 ERROR: Invalid opcode
+00000000                            21  dc.l   Exception       ; Unused (reserved)
+Line 22 ERROR: Invalid opcode
+00000000                            22  dc.l   Exception       ; Unused (reserved)
+Line 23 ERROR: Invalid opcode
+00000000                            23  dc.l   Exception       ; Unused (reserved)
+Line 24 ERROR: Invalid opcode
+00000000                            24  dc.l   Exception       ; Unused (reserved)
+Line 25 ERROR: Invalid opcode
+00000000                            25  dc.l   Exception       ; Unused (reserved)
+Line 26 ERROR: Invalid opcode
+00000000                            26  dc.l   Exception       ; Unused (reserved)
+Line 27 ERROR: Invalid opcode
+00000000                            27  dc.l   Exception       ; Unused (reserved)
+Line 28 ERROR: Invalid opcode
+00000000                            28  dc.l   Exception       ; Unused (reserved)
+Line 29 ERROR: Invalid opcode
+00000000                            29  dc.l   Exception       ; Spurious exception
+Line 30 ERROR: Invalid opcode
+00000000                            30  dc.l   Exception       ; IRQ level 1
+Line 31 ERROR: Invalid opcode
+00000000                            31  dc.l   Exception       ; IRQ level 2
+Line 32 ERROR: Invalid opcode
+00000000                            32  dc.l   Exception       ; IRQ level 3
+Line 33 ERROR: Invalid opcode
+00000000                            33  dc.l   HBlankInterrupt ; IRQ level 4 (horizontal retrace interrupt)
+Line 34 ERROR: Invalid opcode
+00000000                            34  dc.l   Exception       ; IRQ level 5
+Line 35 ERROR: Invalid opcode
+00000000                            35  dc.l   VBlankInterrupt ; IRQ level 6 (vertical retrace interrupt)
+Line 36 ERROR: Invalid opcode
+00000000                            36  dc.l   Exception       ; IRQ level 7
+Line 37 ERROR: Invalid opcode
+00000000                            37  dc.l   Exception       ; TRAP #00 exception
+Line 38 ERROR: Invalid opcode
+00000000                            38  dc.l   Exception       ; TRAP #01 exception
+Line 39 ERROR: Invalid opcode
+00000000                            39  dc.l   Exception       ; TRAP #02 exception
+Line 40 ERROR: Invalid opcode
+00000000                            40  dc.l   Exception       ; TRAP #03 exception
+Line 41 ERROR: Invalid opcode
+00000000                            41  dc.l   Exception       ; TRAP #04 exception
+Line 42 ERROR: Invalid opcode
+00000000                            42  dc.l   Exception       ; TRAP #05 exception
+Line 43 ERROR: Invalid opcode
+00000000                            43  dc.l   Exception       ; TRAP #06 exception
+Line 44 ERROR: Invalid opcode
+00000000                            44  dc.l   Exception       ; TRAP #07 exception
+Line 45 ERROR: Invalid opcode
+00000000                            45  dc.l   Exception       ; TRAP #08 exception
+Line 46 ERROR: Invalid opcode
+00000000                            46  dc.l   Exception       ; TRAP #09 exception
+Line 47 ERROR: Invalid opcode
+00000000                            47  dc.l   Exception       ; TRAP #10 exception
+Line 48 ERROR: Invalid opcode
+00000000                            48  dc.l   Exception       ; TRAP #11 exception
+Line 49 ERROR: Invalid opcode
+00000000                            49  dc.l   Exception       ; TRAP #12 exception
+Line 50 ERROR: Invalid opcode
+00000000                            50  dc.l   Exception       ; TRAP #13 exception
+Line 51 ERROR: Invalid opcode
+00000000                            51  dc.l   Exception       ; TRAP #14 exception
+Line 52 ERROR: Invalid opcode
+00000000                            52  dc.l   Exception       ; TRAP #15 exception
+Line 53 ERROR: Invalid opcode
+00000000                            53  dc.l   Exception       ; Unused (reserved)
+Line 54 ERROR: Invalid opcode
+00000000                            54  dc.l   Exception       ; Unused (reserved)
+Line 55 ERROR: Invalid opcode
+00000000                            55  dc.l   Exception       ; Unused (reserved)
+Line 56 ERROR: Invalid opcode
+00000000                            56  dc.l   Exception       ; Unused (reserved)
+Line 57 ERROR: Invalid opcode
+00000000                            57  dc.l   Exception       ; Unused (reserved)
+Line 58 ERROR: Invalid opcode
+00000000                            58  dc.l   Exception       ; Unused (reserved)
+Line 59 ERROR: Invalid opcode
+00000000                            59  dc.l   Exception       ; Unused (reserved)
+Line 60 ERROR: Invalid opcode
+00000000                            60  dc.l   Exception       ; Unused (reserved)
+Line 61 ERROR: Invalid opcode
+00000000                            61  dc.l   Exception       ; Unused (reserved)
+Line 62 ERROR: Invalid opcode
+00000000                            62  dc.l   Exception       ; Unused (reserved)
+Line 63 ERROR: Invalid opcode
+00000000                            63  dc.l   Exception       ; Unused (reserved)
+Line 64 ERROR: Invalid opcode
+00000000                            64  dc.l   Exception       ; Unused (reserved)
+Line 65 ERROR: Invalid opcode
+00000000                            65  dc.l   Exception       ; Unused (reserved)
+Line 66 ERROR: Invalid opcode
+00000000                            66  dc.l   Exception       ; Unused (reserved)
+Line 67 ERROR: Invalid opcode
+00000000                            67  dc.l   Exception       ; Unused (reserved)
+Line 68 ERROR: Invalid opcode
+00000000                            68  dc.l   Exception       ; Unused (reserved)
+00000000                            69   
+Line 70 ERROR: Invalid opcode
+00000000                            70  dc.b "SEGA MEGADRIVE    "                               ; Console name
+Line 71 ERROR: Invalid syntax
+00000000                            71  dc.b "(C)VELLUNZ 2015.FEB"                              ; Copyright holder and release date
+Line 72 ERROR: Invalid opcode
+00000000                            72  dc.b "THE WESTSIDE HOBOES                             " ; Domestic name
+Line 73 ERROR: Invalid opcode
+00000000                            73  dc.b "ILLEGAL                                         " ; International name
+Line 74 ERROR: Invalid opcode
+00000000                            74  dc.b "GM 00000000-00"                                   ; Version number
+Line 75 ERROR: Invalid opcode
+00000000                            75  dc.w 0x0000                                             ; Checksum
+Line 76 ERROR: Invalid opcode
+00000000                            76  dc.b "J               "                                 ; I/O support
+Line 77 ERROR: Invalid opcode
+00000000                            77  dc.l 0x00000000                                         ; Start address of ROM
+Line 78 ERROR: Invalid opcode
+00000000                            78  dc.l __end                                              ; End address of ROM
+Line 79 ERROR: Invalid opcode
+00000000                            79  dc.l 0x00FF0000                                         ; Start address of RAM
+Line 80 ERROR: Invalid opcode
+00000000                            80  dc.l 0x00FFFFFF                                         ; End address of RAM
+Line 81 ERROR: Invalid opcode
+00000000                            81  dc.l 0x00000000                                         ; SRAM enabled
+Line 82 ERROR: Invalid opcode
+00000000                            82  dc.l 0x00000000                                         ; Unused
+Line 83 ERROR: Invalid opcode
+00000000                            83  dc.l 0x00000000                                         ; Start address of SRAM
+Line 84 ERROR: Invalid opcode
+00000000                            84  dc.l 0x00000000                                         ; End address of SRAM
+Line 85 ERROR: Invalid opcode
+00000000                            85  dc.l 0x00000000                                         ; Unused
+Line 86 ERROR: Invalid opcode
+00000000                            86  dc.l 0x00000000                                         ; Unused
+Line 87 ERROR: Invalid opcode
+00000000                            87  dc.b "                                        "         ; Notes (unused)
+Line 88 ERROR: Invalid opcode
+00000000                            88  dc.b "JUE             "                                 ; Country codes
+00000000                            89  
+00000000                            90  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+00000000                            91  
+00000000                            92  Palette:
+Line 93 ERROR: Invalid syntax
+00000000=                           93     dc.w 0x0000 ; Color 0 - Transparent          ;Subroutine to init initial VDP color palette.
+Line 94 ERROR: Invalid syntax
+00000000=                           94     dc.w 0x000E ; Color 1 - Red              ;If more colors are desired, the VDP supports       
+Line 95 ERROR: Invalid syntax
+00000000=                           95     dc.w 0x00E0 ; Color 2 - Green            ;special "highlight" and "shadow" modes.
+Line 96 ERROR: Invalid syntax
+00000000=                           96     dc.w 0x0E00 ; Color 3 - Blue
+Line 97 ERROR: Invalid syntax
+00000000=                           97     dc.w 0x0000 ; Color 4 - Black
+Line 98 ERROR: Invalid syntax
+00000000=                           98     dc.w 0x0EEE ; Color 5 - White
+Line 99 ERROR: Invalid syntax
+00000000=                           99     dc.w 0x00EE ; Color 6 - Yellow
+Line 100 ERROR: Invalid syntax
+00000000=                          100     dc.w 0x008E ; Color 7 - Orange
+Line 101 ERROR: Invalid syntax
+00000000=                          101     dc.w 0x0E0E ; Color 8 - Pink
+Line 102 ERROR: Invalid syntax
+00000000=                          102     dc.w 0x0808 ; Color 9 - Purple
+Line 103 ERROR: Invalid syntax
+00000000=                          103     dc.w 0x0444 ; Color A - Dark grey
+Line 104 ERROR: Invalid syntax
+00000000=                          104     dc.w 0x0888 ; Color B - Light grey
+Line 105 ERROR: Invalid syntax
+00000000=                          105     dc.w 0x0EE0 ; Color C - Turquoise
+Line 106 ERROR: Invalid syntax
+00000000=                          106     dc.w 0x000A ; Color D - Maroon
+Line 107 ERROR: Invalid syntax
+00000000=                          107     dc.w 0x0600 ; Color E - Navy blue
+Line 108 ERROR: Invalid syntax
+00000000=                          108     dc.w 0x0060 ; Color F - Dark green
+00000000                           109  
+00000000                           110  ;;;;;;;; Super font data will be created here...;;;;;;;;
+00000000                           111  ;;;Remember, "BBAA AAAA AAAA AAAA 0000 0000 BBBB 00AA";;
+00000000                           112  
+00000000                           113  VDPFont:
+Line 114 ERROR: Invalid syntax
+00000000                           114     move.l 0x00C00000, a4
+Line 115 ERROR: Invalid syntax
+00000000                           115     move.l 0x00C00004, a5
+Line 116 ERROR: Invalid syntax
+00000000=                          116     dc.l 0x00000000
+Line 117 ERROR: Invalid syntax
+00000000=                          117     dc.l 0x00011000
+Line 118 ERROR: Invalid syntax
+00000000=                          118     dc.l 0x00100100
+Line 119 ERROR: Invalid syntax
+00000000=                          119     dc.l 0x00100100
+Line 120 ERROR: Invalid syntax
+00000000=                          120     dc.l 0x00111100
+Line 121 ERROR: Invalid syntax
+00000000=                          121     dc.l 0x00100100
+Line 122 ERROR: Invalid syntax
+00000000=                          122     dc.l 0x00100100
+Line 123 ERROR: Invalid syntax
+00000000=                          123     dc.l 0x00000000
+00000000                           124  
+Line 125 ERROR: Invalid syntax
+00000000=                          125     dc.l 0x00000000
+Line 126 ERROR: Invalid syntax
+00000000=                          126     dc.l 0x00111000
+Line 127 ERROR: Invalid syntax
+00000000=                          127     dc.l 0x00100100
+Line 128 ERROR: Invalid syntax
+00000000=                          128     dc.l 0x00111000
+Line 129 ERROR: Invalid syntax
+00000000=                          129     dc.l 0x00100100
+Line 130 ERROR: Invalid syntax
+00000000=                          130     dc.l 0x00100100
+Line 131 ERROR: Invalid syntax
+00000000=                          131     dc.l 0x00111000
+Line 132 ERROR: Invalid syntax
+00000000=                          132     dc.l 0x00000000
+00000000                           133  
+Line 134 ERROR: Invalid syntax
+00000000=                          134     dc.l 0x00000000
+Line 135 ERROR: Invalid syntax
+00000000=                          135     dc.l 0x00011000
+Line 136 ERROR: Invalid syntax
+00000000=                          136     dc.l 0x00100100
+Line 137 ERROR: Invalid syntax
+00000000=                          137     dc.l 0x00100000
+Line 138 ERROR: Invalid syntax
+00000000=                          138     dc.l 0x00100000
+Line 139 ERROR: Invalid syntax
+00000000=                          139     dc.l 0x00100100
+Line 140 ERROR: Invalid syntax
+00000000=                          140     dc.l 0x00011000
+Line 141 ERROR: Invalid syntax
+00000000=                          141     dc.l 0x00000000
+00000000                           142  
+Line 143 ERROR: Invalid syntax
+00000000=                          143     dc.l 0x00000000
+Line 144 ERROR: Invalid syntax
+00000000=                          144     dc.l 0x00111000
+Line 145 ERROR: Invalid syntax
+00000000=                          145     dc.l 0x00100100
+Line 146 ERROR: Invalid syntax
+00000000=                          146     dc.l 0x00100100
+Line 147 ERROR: Invalid syntax
+00000000=                          147     dc.l 0x00100100
+Line 148 ERROR: Invalid syntax
+00000000=                          148     dc.l 0x00100100
+Line 149 ERROR: Invalid syntax
+00000000=                          149     dc.l 0x00111000
+Line 150 ERROR: Invalid syntax
+00000000=                          150     dc.l 0x00000000
+00000000                           151  
+Line 152 ERROR: Invalid syntax
+00000000=                          152     dc.l 0x00000000
+Line 153 ERROR: Invalid syntax
+00000000=                          153     dc.l 0x00111100
+Line 154 ERROR: Invalid syntax
+00000000=                          154     dc.l 0x00100000
+Line 155 ERROR: Invalid syntax
+00000000=                          155     dc.l 0x00111000
+Line 156 ERROR: Invalid syntax
+00000000=                          156     dc.l 0x00100000
+Line 157 ERROR: Invalid syntax
+00000000=                          157     dc.l 0x00100000
+Line 158 ERROR: Invalid syntax
+00000000=                          158     dc.l 0x00111100
+Line 159 ERROR: Invalid syntax
+00000000=                          159     dc.l 0x00000000
+00000000                           160  
+Line 161 ERROR: Invalid syntax
+00000000=                          161     dc.l 0x00000000
+Line 162 ERROR: Invalid syntax
+00000000=                          162     dc.l 0x00111100
+Line 163 ERROR: Invalid syntax
+00000000=                          163     dc.l 0x00100000
+Line 164 ERROR: Invalid syntax
+00000000=                          164     dc.l 0x00111000
+Line 165 ERROR: Invalid syntax
+00000000=                          165     dc.l 0x00100000
+Line 166 ERROR: Invalid syntax
+00000000=                          166     dc.l 0x00100000
+Line 167 ERROR: Invalid syntax
+00000000=                          167     dc.l 0x00100000
+Line 168 ERROR: Invalid syntax
+00000000=                          168     dc.l 0x00000000
+00000000                           169  
+Line 170 ERROR: Invalid syntax
+00000000=                          170     dc.l 0x00000000
+Line 171 ERROR: Invalid syntax
+00000000=                          171     dc.l 0x00011000
+Line 172 ERROR: Invalid syntax
+00000000=                          172     dc.l 0x00100100
+Line 173 ERROR: Invalid syntax
+00000000=                          173     dc.l 0x00100000
+Line 174 ERROR: Invalid syntax
+00000000=                          174     dc.l 0x00101100
+Line 175 ERROR: Invalid syntax
+00000000=                          175     dc.l 0x00100100
+Line 176 ERROR: Invalid syntax
+00000000=                          176     dc.l 0x00011000
+Line 177 ERROR: Invalid syntax
+00000000=                          177     dc.l 0x00000000
+00000000                           178  
+Line 179 ERROR: Invalid syntax
+00000000=                          179     dc.l 0x00000000
+Line 180 ERROR: Invalid syntax
+00000000=                          180     dc.l 0x00100100
+Line 181 ERROR: Invalid syntax
+00000000=                          181     dc.l 0x00100100
+Line 182 ERROR: Invalid syntax
+00000000=                          182     dc.l 0x00111100
+Line 183 ERROR: Invalid syntax
+00000000=                          183     dc.l 0x00100100
+Line 184 ERROR: Invalid syntax
+00000000=                          184     dc.l 0x00100100
+Line 185 ERROR: Invalid syntax
+00000000=                          185     dc.l 0x00100100
+Line 186 ERROR: Invalid syntax
+00000000=                          186     dc.l 0x00000000
+00000000                           187  
+Line 188 ERROR: Invalid syntax
+00000000=                          188     dc.l 0x00000000
+Line 189 ERROR: Invalid syntax
+00000000=                          189     dc.l 0x00111000
+Line 190 ERROR: Invalid syntax
+00000000=                          190     dc.l 0x00010000
+Line 191 ERROR: Invalid syntax
+00000000=                          191     dc.l 0x00010000
+Line 192 ERROR: Invalid syntax
+00000000=                          192     dc.l 0x00010000
+Line 193 ERROR: Invalid syntax
+00000000=                          193     dc.l 0x00010000
+Line 194 ERROR: Invalid syntax
+00000000=                          194     dc.l 0x00111000
+Line 195 ERROR: Invalid syntax
+00000000=                          195     dc.l 0x00000000
+00000000                           196  
+Line 197 ERROR: Invalid syntax
+00000000=                          197     dc.l 0x00000000
+Line 198 ERROR: Invalid syntax
+00000000=                          198     dc.l 0x00000100
+Line 199 ERROR: Invalid syntax
+00000000=                          199     dc.l 0x00000100
+Line 200 ERROR: Invalid syntax
+00000000=                          200     dc.l 0x00000100
+Line 201 ERROR: Invalid syntax
+00000000=                          201     dc.l 0x00000100
+Line 202 ERROR: Invalid syntax
+00000000=                          202     dc.l 0x00100100
+Line 203 ERROR: Invalid syntax
+00000000=                          203     dc.l 0x00011000
+Line 204 ERROR: Invalid syntax
+00000000=                          204     dc.l 0x00000000
+00000000                           205  
+Line 206 ERROR: Invalid syntax
+00000000=                          206     dc.l 0x00000000
+Line 207 ERROR: Invalid syntax
+00000000=                          207     dc.l 0x00101000
+Line 208 ERROR: Invalid syntax
+00000000=                          208     dc.l 0x00101000
+Line 209 ERROR: Invalid syntax
+00000000=                          209     dc.l 0x00110000
+Line 210 ERROR: Invalid syntax
+00000000=                          210     dc.l 0x00101000
+Line 211 ERROR: Invalid syntax
+00000000=                          211     dc.l 0x00100100
+Line 212 ERROR: Invalid syntax
+00000000=                          212     dc.l 0x00100100
+Line 213 ERROR: Invalid syntax
+00000000=                          213     dc.l 0x00000000
+00000000                           214  
+Line 215 ERROR: Invalid syntax
+00000000=                          215     dc.l 0x00000000
+Line 216 ERROR: Invalid syntax
+00000000=                          216     dc.l 0x00100000
+Line 217 ERROR: Invalid syntax
+00000000=                          217     dc.l 0x00100000
+Line 218 ERROR: Invalid syntax
+00000000=                          218     dc.l 0x00100000
+Line 219 ERROR: Invalid syntax
+00000000=                          219     dc.l 0x00100000
+Line 220 ERROR: Invalid syntax
+00000000=                          220     dc.l 0x00100000
+Line 221 ERROR: Invalid syntax
+00000000=                          221     dc.l 0x00111100
+Line 222 ERROR: Invalid syntax
+00000000=                          222     dc.l 0x00000000
+00000000                           223  
+Line 224 ERROR: Invalid syntax
+00000000=                          224     dc.l 0x00000000
+Line 225 ERROR: Invalid syntax
+00000000=                          225     dc.l 0x01000100
+Line 226 ERROR: Invalid syntax
+00000000=                          226     dc.l 0x01101100
+Line 227 ERROR: Invalid syntax
+00000000=                          227     dc.l 0x01010100
+Line 228 ERROR: Invalid syntax
+00000000=                          228     dc.l 0x01000100
+Line 229 ERROR: Invalid syntax
+00000000=                          229     dc.l 0x01000100
+Line 230 ERROR: Invalid syntax
+00000000=                          230     dc.l 0x01000100
+Line 231 ERROR: Invalid syntax
+00000000=                          231     dc.l 0x00000000
+00000000                           232  
+Line 233 ERROR: Invalid syntax
+00000000=                          233     dc.l 0x00000000
+Line 234 ERROR: Invalid syntax
+00000000=                          234     dc.l 0x00100100
+Line 235 ERROR: Invalid syntax
+00000000=                          235     dc.l 0x00110100
+Line 236 ERROR: Invalid syntax
+00000000=                          236     dc.l 0x00110100
+Line 237 ERROR: Invalid syntax
+00000000=                          237     dc.l 0x00101100
+Line 238 ERROR: Invalid syntax
+00000000=                          238     dc.l 0x00101100
+Line 239 ERROR: Invalid syntax
+00000000=                          239     dc.l 0x00100100
+Line 240 ERROR: Invalid syntax
+00000000=                          240     dc.l 0x00000000
+00000000                           241  
+Line 242 ERROR: Invalid syntax
+00000000=                          242     dc.l 0x00000000
+Line 243 ERROR: Invalid syntax
+00000000=                          243     dc.l 0x00011000
+Line 244 ERROR: Invalid syntax
+00000000=                          244     dc.l 0x00100100
+Line 245 ERROR: Invalid syntax
+00000000=                          245     dc.l 0x00100100
+Line 246 ERROR: Invalid syntax
+00000000=                          246     dc.l 0x00100100
+Line 247 ERROR: Invalid syntax
+00000000=                          247     dc.l 0x00100100
+Line 248 ERROR: Invalid syntax
+00000000=                          248     dc.l 0x00011000
+Line 249 ERROR: Invalid syntax
+00000000=                          249     dc.l 0x00000000
+00000000                           250  
+Line 251 ERROR: Invalid syntax
+00000000=                          251     dc.l 0x00000000
+Line 252 ERROR: Invalid syntax
+00000000=                          252     dc.l 0x00111000
+Line 253 ERROR: Invalid syntax
+00000000=                          253     dc.l 0x00100100
+Line 254 ERROR: Invalid syntax
+00000000=                          254     dc.l 0x00100100
+Line 255 ERROR: Invalid syntax
+00000000=                          255     dc.l 0x00111000
+Line 256 ERROR: Invalid syntax
+00000000=                          256     dc.l 0x00100000
+Line 257 ERROR: Invalid syntax
+00000000=                          257     dc.l 0x00100000
+Line 258 ERROR: Invalid syntax
+00000000=                          258     dc.l 0x00000000
+00000000                           259  
+Line 260 ERROR: Invalid syntax
+00000000=                          260     dc.l 0x00000000
+Line 261 ERROR: Invalid syntax
+00000000=                          261     dc.l 0x00011000
+Line 262 ERROR: Invalid syntax
+00000000=                          262     dc.l 0x00100100
+Line 263 ERROR: Invalid syntax
+00000000=                          263     dc.l 0x00100100
+Line 264 ERROR: Invalid syntax
+00000000=                          264     dc.l 0x00100100
+Line 265 ERROR: Invalid syntax
+00000000=                          265     dc.l 0x00100100
+Line 266 ERROR: Invalid syntax
+00000000=                          266     dc.l 0x00011100
+Line 267 ERROR: Invalid syntax
+00000000=                          267     dc.l 0x00000010
+00000000                           268  
+Line 269 ERROR: Invalid syntax
+00000000=                          269     dc.l 0x00000000
+Line 270 ERROR: Invalid syntax
+00000000=                          270     dc.l 0x00111000
+Line 271 ERROR: Invalid syntax
+00000000=                          271     dc.l 0x00100100
+Line 272 ERROR: Invalid syntax
+00000000=                          272     dc.l 0x00100100
+Line 273 ERROR: Invalid syntax
+00000000=                          273     dc.l 0x00111000
+Line 274 ERROR: Invalid syntax
+00000000=                          274     dc.l 0x00100100
+Line 275 ERROR: Invalid syntax
+00000000=                          275     dc.l 0x00100100
+Line 276 ERROR: Invalid syntax
+00000000=                          276     dc.l 0x00000000
+00000000                           277  
+Line 278 ERROR: Invalid syntax
+00000000=                          278     dc.l 0x00000000
+Line 279 ERROR: Invalid syntax
+00000000=                          279     dc.l 0x00011100
+Line 280 ERROR: Invalid syntax
+00000000=                          280     dc.l 0x00100000
+Line 281 ERROR: Invalid syntax
+00000000=                          281     dc.l 0x00011000
+Line 282 ERROR: Invalid syntax
+00000000=                          282     dc.l 0x00000100
+Line 283 ERROR: Invalid syntax
+00000000=                          283     dc.l 0x00000100
+Line 284 ERROR: Invalid syntax
+00000000=                          284     dc.l 0x00111000
+Line 285 ERROR: Invalid syntax
+00000000=                          285     dc.l 0x00000000
+00000000                           286  
+Line 287 ERROR: Invalid syntax
+00000000=                          287     dc.l 0x00000000
+Line 288 ERROR: Invalid syntax
+00000000=                          288     dc.l 0x00111000
+Line 289 ERROR: Invalid syntax
+00000000=                          289     dc.l 0x00010000
+Line 290 ERROR: Invalid syntax
+00000000=                          290     dc.l 0x00010000
+Line 291 ERROR: Invalid syntax
+00000000=                          291     dc.l 0x00010000
+Line 292 ERROR: Invalid syntax
+00000000=                          292     dc.l 0x00010000
+Line 293 ERROR: Invalid syntax
+00000000=                          293     dc.l 0x00010000
+Line 294 ERROR: Invalid syntax
+00000000=                          294     dc.l 0x00000000
+00000000                           295  
+Line 296 ERROR: Invalid syntax
+00000000=                          296     dc.l 0x00000000
+Line 297 ERROR: Invalid syntax
+00000000=                          297     dc.l 0x00100100
+Line 298 ERROR: Invalid syntax
+00000000=                          298     dc.l 0x00100100
+Line 299 ERROR: Invalid syntax
+00000000=                          299     dc.l 0x00100100
+Line 300 ERROR: Invalid syntax
+00000000=                          300     dc.l 0x00100100
+Line 301 ERROR: Invalid syntax
+00000000=                          301     dc.l 0x00100100
+Line 302 ERROR: Invalid syntax
+00000000=                          302     dc.l 0x00111100
+Line 303 ERROR: Invalid syntax
+00000000=                          303     dc.l 0x00000000
+00000000                           304  
+Line 305 ERROR: Invalid syntax
+00000000=                          305     dc.l 0x00000000
+Line 306 ERROR: Invalid syntax
+00000000=                          306     dc.l 0x00100100
+Line 307 ERROR: Invalid syntax
+00000000=                          307     dc.l 0x00100100
+Line 308 ERROR: Invalid syntax
+00000000=                          308     dc.l 0x00100100
+Line 309 ERROR: Invalid syntax
+00000000=                          309     dc.l 0x00100100
+Line 310 ERROR: Invalid syntax
+00000000=                          310     dc.l 0x00010100
+Line 311 ERROR: Invalid syntax
+00000000=                          311     dc.l 0x00001100
+Line 312 ERROR: Invalid syntax
+00000000=                          312     dc.l 0x00000000
+00000000                           313  
+Line 314 ERROR: Invalid syntax
+00000000=                          314     dc.l 0x00000000
+Line 315 ERROR: Invalid syntax
+00000000=                          315     dc.l 0x01000100
+Line 316 ERROR: Invalid syntax
+00000000=                          316     dc.l 0x01000100
+Line 317 ERROR: Invalid syntax
+00000000=                          317     dc.l 0x01000100
+Line 318 ERROR: Invalid syntax
+00000000=                          318     dc.l 0x01010100
+Line 319 ERROR: Invalid syntax
+00000000=                          319     dc.l 0x01101100
+Line 320 ERROR: Invalid syntax
+00000000=                          320     dc.l 0x01000100
+Line 321 ERROR: Invalid syntax
+00000000=                          321     dc.l 0x00000000
+00000000                           322  
+Line 323 ERROR: Invalid syntax
+00000000=                          323     dc.l 0x00000000
+Line 324 ERROR: Invalid syntax
+00000000=                          324     dc.l 0x00100100
+Line 325 ERROR: Invalid syntax
+00000000=                          325     dc.l 0x00100100
+Line 326 ERROR: Invalid syntax
+00000000=                          326     dc.l 0x00010000
+Line 327 ERROR: Invalid syntax
+00000000=                          327     dc.l 0x00001000
+Line 328 ERROR: Invalid syntax
+00000000=                          328     dc.l 0x00100100
+Line 329 ERROR: Invalid syntax
+00000000=                          329     dc.l 0x00100100
+Line 330 ERROR: Invalid syntax
+00000000=                          330     dc.l 0x00000000
+00000000                           331  
+Line 332 ERROR: Invalid syntax
+00000000=                          332     dc.l 0x00000000
+Line 333 ERROR: Invalid syntax
+00000000=                          333     dc.l 0x00100010
+Line 334 ERROR: Invalid syntax
+00000000=                          334     dc.l 0x00100010
+Line 335 ERROR: Invalid syntax
+00000000=                          335     dc.l 0x00010100
+Line 336 ERROR: Invalid syntax
+00000000=                          336     dc.l 0x00001000
+Line 337 ERROR: Invalid syntax
+00000000=                          337     dc.l 0x00001000
+Line 338 ERROR: Invalid syntax
+00000000=                          338     dc.l 0x00001000
+Line 339 ERROR: Invalid syntax
+00000000=                          339     dc.l 0x00000000
+00000000                           340  
+Line 341 ERROR: Invalid syntax
+00000000=                          341     dc.l 0x00000000
+Line 342 ERROR: Invalid syntax
+00000000=                          342     dc.l 0x00111100
+Line 343 ERROR: Invalid syntax
+00000000=                          343     dc.l 0x00000100
+Line 344 ERROR: Invalid syntax
+00000000=                          344     dc.l 0x00001000
+Line 345 ERROR: Invalid syntax
+00000000=                          345     dc.l 0x00010000
+Line 346 ERROR: Invalid syntax
+00000000=                          346     dc.l 0x00100000
+Line 347 ERROR: Invalid syntax
+00000000=                          347     dc.l 0x00111100
+Line 348 ERROR: Invalid syntax
+00000000=                          348     dc.l 0x00000000
+Line 349 WARNING: END directive missing, starting address not set
+
+309 errors detected
+1 warning generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------
+PALETTE             0
+VDPFONT             0
