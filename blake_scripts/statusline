@@ -1,0 +1,11 @@
+#!/bin/bash
+
+NUMBERISER=1
+COLORIZE=$(tput setaf 4 && tput bold)
+RESET=$(tput sgr0)
+
+while [ 1 ]
+do
+    printf "\nMEM $(free -h | grep Mem | awk '{print $3}') ${COLORIZE}Oo.oO${RESET} SWAP $(free -h | grep Swap | awk '{print $3}') ${COLORIZE}Oo.oO${RESET} HOME $(du -sh /home/cooro | awk '{print $1}') ${COLORIZE}Oo.oO${RESET} $(date +%Y.%m.%d\ %H:%M:%S)"
+    sleep 5
+done
