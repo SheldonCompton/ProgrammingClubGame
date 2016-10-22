@@ -1,0 +1,925 @@
+vellunz@Zee:~$ tree
+The program 'tree' is currently not installed. You can install it by typing:
+sudo apt install tree
+vellunz@Zee:~$ ll /
+total 37232
+drwxr-xr-x  25 root root     4096 Oct 21 02:51 ./
+drwxr-xr-x  25 root root     4096 Oct 21 02:51 ../
+drwxr-xr-x   2 root root     4096 Oct 21 01:42 bin/
+drwxr-xr-x   4 root root     4096 Oct 21 02:11 boot/
+drwxrwxr-x   2 root root     4096 Oct 21 01:36 cdrom/
+-rw-------   1 root root 38019072 Oct 21 02:51 core
+drwxr-xr-x  21 root root     4700 Oct 21 16:46 dev/
+drwxr-xr-x 133 root root    12288 Oct 22 00:29 etc/
+drwxr-xr-x   3 root root     4096 Oct 21 01:37 home/
+lrwxrwxrwx   1 root root       32 Oct 21 01:40 initrd.img -> boot/initrd.img-4.8.0-22-generic
+lrwxrwxrwx   1 root root       32 Oct 21 01:35 initrd.img.old -> boot/initrd.img-4.8.0-22-generic
+drwxr-xr-x  21 root root     4096 Oct 22 00:14 lib/
+drwxr-xr-x   2 root root     4096 Oct 21 02:07 lib32/
+drwxr-xr-x   2 root root     4096 Oct 12 15:22 lib64/
+drwx------   2 root root    16384 Oct 21 01:34 lost+found/
+drwxr-xr-x   3 root root     4096 Oct 21 02:24 media/
+drwxr-xr-x   2 root root     4096 Oct 12 15:22 mnt/
+drwxr-xr-x   2 root root     4096 Oct 12 15:22 opt/
+dr-xr-xr-x 203 root root        0 Oct 21 16:45 proc/
+drwx------   8 root root     4096 Oct 21 16:31 root/
+drwxr-xr-x  27 root root      880 Oct 21 22:02 run/
+drwxr-xr-x   2 root root     4096 Oct 21 02:07 sbin/
+drwxr-xr-x   2 root root     4096 Oct  6 14:49 snap/
+drwxr-xr-x   2 root root     4096 Oct 12 15:22 srv/
+dr-xr-xr-x  13 root root        0 Oct 21 16:45 sys/
+drwxrwxrwt  14 root root     4096 Oct 22 03:56 tmp/
+drwxr-xr-x  12 root root     4096 Oct 21 02:07 usr/
+drwxr-xr-x  14 root root     4096 Oct 12 15:30 var/
+lrwxrwxrwx   1 root root       29 Oct 21 01:40 vmlinuz -> boot/vmlinuz-4.8.0-22-generic
+vellunz@Zee:~$ ll -r /
+total 37232
+lrwxrwxrwx   1 root root       29 Oct 21 01:40 vmlinuz -> boot/vmlinuz-4.8.0-22-generic
+drwxr-xr-x  14 root root     4096 Oct 12 15:30 var/
+drwxr-xr-x  12 root root     4096 Oct 21 02:07 usr/
+drwxrwxrwt  14 root root     4096 Oct 22 03:56 tmp/
+dr-xr-xr-x  13 root root        0 Oct 22 03:56 sys/
+drwxr-xr-x   2 root root     4096 Oct 12 15:22 srv/
+drwxr-xr-x   2 root root     4096 Oct  6 14:49 snap/
+drwxr-xr-x   2 root root     4096 Oct 21 02:07 sbin/
+drwxr-xr-x  27 root root      880 Oct 21 22:02 run/
+drwx------   8 root root     4096 Oct 21 16:31 root/
+dr-xr-xr-x 203 root root        0 Oct 21 16:45 proc/
+drwxr-xr-x   2 root root     4096 Oct 12 15:22 opt/
+drwxr-xr-x   2 root root     4096 Oct 12 15:22 mnt/
+drwxr-xr-x   3 root root     4096 Oct 21 02:24 media/
+drwx------   2 root root    16384 Oct 21 01:34 lost+found/
+drwxr-xr-x   2 root root     4096 Oct 12 15:22 lib64/
+drwxr-xr-x   2 root root     4096 Oct 21 02:07 lib32/
+drwxr-xr-x  21 root root     4096 Oct 22 00:14 lib/
+lrwxrwxrwx   1 root root       32 Oct 21 01:35 initrd.img.old -> boot/initrd.img-4.8.0-22-generic
+lrwxrwxrwx   1 root root       32 Oct 21 01:40 initrd.img -> boot/initrd.img-4.8.0-22-generic
+drwxr-xr-x   3 root root     4096 Oct 21 01:37 home/
+drwxr-xr-x 133 root root    12288 Oct 22 00:29 etc/
+drwxr-xr-x  21 root root     4700 Oct 21 16:46 dev/
+-rw-------   1 root root 38019072 Oct 21 02:51 core
+drwxrwxr-x   2 root root     4096 Oct 21 01:36 cdrom/
+drwxr-xr-x   4 root root     4096 Oct 21 02:11 boot/
+drwxr-xr-x   2 root root     4096 Oct 21 01:42 bin/
+drwxr-xr-x  25 root root     4096 Oct 21 02:51 ../
+drwxr-xr-x  25 root root     4096 Oct 21 02:51 ./
+vellunz@Zee:~$ ls -r /
+vmlinuz  tmp  snap  root  mnt         lib64  initrd.img.old  etc   cdrom
+var      sys  sbin  proc  media       lib32  initrd.img      dev   boot
+usr      srv  run   opt   lost+found  lib    home            core  bin
+vellunz@Zee:~$ ls -r /*
+/vmlinuz  /initrd.img.old  /initrd.img  /core
+
+/var:
+tmp    snap  opt      mail  lock   lib    cache
+spool  run   metrics  log   local  crash  backups
+
+/usr:
+src  share  sbin  local  lib32  lib  include  games  @DATADIRNAME@  bin
+
+/tmp:
+tmphge3mv79
+systemd-private-8abc013305d944a691af1bb764d6840e-systemd-timesyncd.service-DKZUdO
+ssh-yUTS0t3qnyQL
+ssh-Q7O3Wn6ViWH5
+mozilla_vellunz0
+hsperfdata_vellunz
+gameoverlayui.log.last
+gameoverlayui.log
+dumps
+config-err-VNHCq4
+
+/sys:
+power   kernel      fs        devices  class  block
+module  hypervisor  firmware  dev      bus
+
+/srv:
+
+/snap:
+
+/sbin:
+zramctl                ntfslabel          ifquery
+xtables-multi          ntfscp             ifdown
+wpa_supplicant         ntfsclone          ifconfig
+wpa_cli                nameif             hwclock
+wpa_action             mount.ntfs-3g      hdparm
+wipefs                 mount.ntfs         halt
+ureadahead             mount.lowntfs-3g   getty
+unix_update            mount.fuse         get-quirk-options
+unix_chkpwd            modprobe           getpcaps
+umount.udisks2         modinfo            getcap
+udevadm                mkswap             fstrim
+u-d-c-print-pci-ids    mkntfs             fstab-decode
+tune2fs                mkhomedir_helper   fsfreeze
+tipc                   mkfs.vfat          fsck.vfat
+telinit                mkfs.ntfs          fsck.msdos
+tc                     mkfs.msdos         fsck.minix
+sysctl                 mkfs.minix         fsck.fat
+switch_root            mkfs.fat           fsck.ext4dev
+swapon                 mkfs.ext4dev       fsck.ext4
+swapoff                mkfs.ext4          fsck.ext3
+swaplabel              mkfs.ext3          fsck.ext2
+sulogin                mkfs.ext2          fsck.cramfs
+start-stop-daemon      mkfs.cramfs        fsck
+slattach               mkfs.bfs           findfs
+shutdown               mkfs               fdisk
+shadowconfig           mke2fs             fatlabel
+sfdisk                 mkdosfs            e2undo
+setvtrgb               mii-tool           e2label
+setcap                 lspcmcia           e2image
+runuser                lsmod              e2fsck
+runlevel               losetup            dumpe2fs
+rtmon                  logsave            dosfslabel
+rtacct                 ldconfig.real      dosfsck
+route                  ldconfig           dmstats
+rmmod                  killall5           dmsetup
+resolvconf             kbdrate            dhclient-script
+resize2fs              iwspy              dhclient
+regdbdump              iwpriv             depmod
+reboot                 iwlist             debugfs
+raw                    iwgetid            ctrlaltdel
+rarp                   iwevent            create-uvm-dev-node
+prime-switch           iwconfig           crda
+prime-offload          iw                 chcpu
+poweroff               isosize            cfdisk
+plymouthd              iptunnel           capsh
+plipconfig             iptables-save      bridge
+pivot_root             iptables-restore   blockdev
+pccardctl              iptables           blkid
+partprobe              ipmaddr            blkdiscard
+parted                 ip6tables-save     blkdeactivate
+pam_tally2             ip6tables-restore  badblocks
+pam_tally              ip6tables          apparmor_parser
+pam_extrausers_update  ip                 apm_available
+pam_extrausers_chkpwd  installkernel      agetty
+on_ac_power            insmod             acpi_available
+ntfsundelete           init
+ntfsresize             ifup
+
+/run:
+wpa_supplicant                        shm                  initramfs
+uuidd                                 sendsigs.omit.d      initctl
+utmp                                  rsyslogd.pid         fsck
+user                                  resolvconf           dhclient-wlp3s0.pid
+udisks2                               plymouth             dbus
+udev                                  nvidia-persistenced  cups
+u-d-c-nvidia-was-loaded               NetworkManager       crond.reboot
+u-d-c-gpu-0000:04:00.0-0x10de-0x1341  network              crond.pid
+tmpfiles.d                            mount                console-setup
+systemd                               log                  avahi-daemon
+synaptic.socket                       lock                 alsa
+sudo                                  lightdm.pid          agetty.reload
+snapd.socket                          lightdm              acpid.socket
+snapd-snap.socket                     irqbalance.pid       acpid.pid
+ls: cannot open directory '/root': Permission denied
+
+/proc:
+zoneinfo           meminfo      cgroups    728   43    270   191   1362   11857
+vmstat             mdstat       bus        727   42    27    190   13556  11827
+vmallocinfo        locks        buddyinfo  724   41    261   19    13535  11808
+version_signature  loadavg      asound     723   406   26    189   13534  117
+version            kpageflags   acpi       720   404   25    184   13533  116
+uptime             kpagecount   98         718   403   2471  18    1353   115
+tty                kpagecgroup  97         707   40    24    16    13506  114
+timer_stats        kmsg         961        701   39    2372  1533  1349   113
+timer_list         key-users    96         700   38    234   15    13472  112
+thread-self        keys         952        7     3779  233   1475  1346   111
+sysvipc            kcore        95         632   3768  231   147   1343   110
+sysrq-trigger      kallsyms     94         602   3753  22    1469  1341   11
+sys                irq          932        587   3726  212   1464  13407  10956
+swaps              ioports      93         574   37    210   146   13397  109
+stat               iomem        926        565   361   21    1455  1331   1088
+softirqs           interrupts   92         52    36    207   1451  1329   108
+slabinfo           fs           91         51    359   205   1449  13283  1078
+self               filesystems  9          50    35    203   1438  1325   107
+scsi               fb           879        5     34    202   1432  1312   1066
+schedstat          execdomains  873        4996  3394  201   1419  1307   106
+sched_debug        driver       8          46    33    200   14    13     105
+partitions         dma          7835       45    32    20    1397  1296   104
+pagetypeinfo       diskstats    774        440   3116  2     1385  1251   103
+net                devices      766        44    31    196   1374  124    102
+mtrr               crypto       761        436   300   195   1372  1238   101
+mounts             cpuinfo      732        434   30    194   1371  1230   100
+modules            consoles     730        433   3     193   1368  1229   10
+misc               cmdline      729        432   28    192   1364  12     1
+
+/opt:
+
+/mnt:
+
+/media:
+vellunz
+ls: cannot open directory '/lost+found': Permission denied
+
+/lib64:
+ld-linux-x86-64.so.2
+
+/lib32:
+libutil.so.1            libnss_nis-2.24.so     libdl-2.24.so
+libutil-2.24.so         libnss_hesiod.so.2     libc.so.6
+libthread_db.so.1       libnss_hesiod-2.24.so  libcrypt.so.1
+libthread_db-1.0.so     libnss_files.so.2      libcrypt-2.24.so
+libSegFault.so          libnss_files-2.24.so   libcidn.so.1
+librt.so.1              libnss_dns.so.2        libcidn-2.24.so
+librt-2.24.so           libnss_dns-2.24.so     libc-2.24.so
+libresolv.so.2          libnss_compat.so.2     libBrokenLocale.so.1
+libresolv-2.24.so       libnss_compat-2.24.so  libBrokenLocale-2.24.so
+libpthread.so.0         libnsl.so.1            libanl.so.1
+libpthread-2.24.so      libnsl-2.24.so         libanl-2.24.so
+libpcprofile.so         libm.so.6              ld-linux.so.2
+libnss_nis.so.2         libmemusage.so         ld-2.24.so
+libnss_nisplus.so.2     libm-2.24.so
+libnss_nisplus-2.24.so  libdl.so.2
+
+/lib:
+x86_64-linux-gnu  recovery-mode  ld-linux.so.2                         firmware
+ufw               nvidia-367     klibc-8kba-ZlvkVvRx_mp57c4ZzwLfNs.so  crda
+udev              netplan        init                                  cpp
+terminfo          modules        ifupdown                              apparmor
+systemd           modprobe.d     i386-linux-gnu
+resolvconf        lsb            hdparm
+
+/home:
+vellunz
+
+/etc:
+zsh_command_not_found  presage.xml              hp
+xml                    ppp                      hosts.deny
+xdg                    popularity-contest.conf  hosts.allow
+X11                    polkit-1                 hosts
+wvdial.conf            pnm2ppa.conf             hostname
+wpa_supplicant         pm                       host.conf
+wildmidi               perl                     hdparm.conf
+wgetrc                 pcmcia                   guest-session
+vtrgb                  passwd-                  gtk-3.0
+vim                    passwd                   gtk-2.0
+vdpau_wrapper.cfg      papersize                gss
+usb_modeswitch.d       pam.d                    gshadow-
+usb_modeswitch.conf    pam.conf                 gshadow
+UPower                 PackageKit               grub.d
+update-notifier        os-release               group-
+update-motd.d          opt                      group
+update-manager         OpenCL                   groff
+updatedb.conf          openal                   gnome-vfs-2.0
+uniconf.conf           nsswitch.conf            gnome-system-tools
+ufw                    newt                     gnome
+udisks2                networks                 ghostscript
+udev                   NetworkManager           gconf
+ucf.conf               network                  gai.conf
+tmpfiles.d             netplan                  fuse.conf
+timidity               nanorc                   fstab
+timezone               mysql                    fonts
+terminfo               mtools.conf              fish
+systemd                mtab                     firefox
+sysctl.d               mplayer                  ffserver.conf
+sysctl.conf            modules-load.d           environment
+sudoers.d              modules                  emacs
+sudoers                modprobe.d               drirc
+subuid-                mke2fs.conf              dpkg
+subuid                 mime.types               dnsmasq.d
+subgid-                menu-methods             dkms
+subgid                 manpath.config           dictionaries-common
+ssl                    mailcap.order            dhcp
+ssh                    mailcap                  depmod.d
+sound                  magic.mime               deluser.conf
+skel                   magic                    default
+shells                 machine-id               debian_version
+shadow-                lxdm                     debconf.conf
+shadow                 ltrace.conf              dbus-1
+sgml                   lsb-release              cupshelpers
+services               logrotate.d              cups
+sensors.d              logrotate.conf           cron.weekly
+sensors3.conf          login.defs               crontab
+selinux                logcheck                 cron.monthly
+security               localtime                cron.hourly
+securetty              locale.gen               cron.daily
+sane.d                 locale.alias             cron.d
+rsyslog.d              lightdm                  console-setup
+rsyslog.conf           libreoffice              chatscripts
+rpc                    libpaper.d               calendar
+rmt                    libnl-3                  ca-certificates.conf
+resolv.conf            libgda-5.0               ca-certificates
+resolvconf             libaudit.conf            bonobo-activation
+rcS.d                  legal                    bluetooth
+rc6.d                  ld.so.conf.d             binfmt.d
+rc5.d                  ld.so.conf               bindresvport.blacklist
+rc4.d                  ld.so.cache              bash_completion.d
+rc3.d                  ldap                     bash_completion
+rc2.d                  kerneloops.conf          bash.bashrc
+rc1.d                  kernel-img.conf          avahi
+rc0.d                  kernel                   apt
+python3.5              java-8-openjdk           appstream.conf
+python3                issue.net                apport
+python2.7              issue                    apparmor.d
+python                 iproute2                 apparmor
+purple                 inputrc                  apm
+pulse                  initramfs-tools          anacrontab
+protocols              init.d                   alternatives
+profile.d              init                     adduser.conf
+profile                ImageMagick-6            acpi
+prime-discrete         ifplugd
+
+/dev:
+zero         ttyS25     tty49  tty13     ram1                i2c-8
+video0       ttyS24     tty48  tty12     ram0                i2c-7
+vhost-net    ttyS23     tty47  tty11     pts                 i2c-6
+vhci         ttyS22     tty46  tty10     ptmx                i2c-5
+vga_arbiter  ttyS21     tty45  tty1      psaux               i2c-4
+vfio         ttyS20     tty44  tty0      ppp                 i2c-3
+vcsa6        ttyS2      tty43  tty       port                i2c-2
+vcsa5        ttyS19     tty42  tpm0      nvidia-uvm          i2c-1
+vcsa4        ttyS18     tty41  stdout    nvidia-modeset      i2c-0
+vcsa3        ttyS17     tty40  stdin     nvidiactl           hwrng
+vcsa2        ttyS16     tty4   stderr    nvidia0             hugepages
+vcsa1        ttyS15     tty39  sr0       null                hpet
+vcsa         ttyS14     tty38  snd       network_throughput  hidraw0
+vcs6         ttyS13     tty37  snapshot  network_latency     gpiochip0
+vcs5         ttyS12     tty36  shm       net                 fuse
+vcs4         ttyS11     tty35  sg1       mqueue              full
+vcs3         ttyS10     tty34  sg0       memory_bandwidth    fd
+vcs2         ttyS1      tty33  sda3      mem                 fb0
+vcs1         ttyS0      tty32  sda2      mei0                ecryptfs
+vcs          ttyprintk  tty31  sda1      media0              dvdrw
+v4l          tty9       tty30  sda       mcelog              dvd
+userio       tty8       tty3   rtc0      mapper              drm_dp_aux0
+usb          tty7       tty29  rtc       loop-control        dri
+urandom      tty63      tty28  rfkill    loop7               disk
+uinput       tty62      tty27  random    loop6               cuse
+uhid         tty61      tty26  ram9      loop5               cpu_dma_latency
+ttyS9        tty60      tty25  ram8      loop4               cpu
+ttyS8        tty6       tty24  ram7      loop3               core
+ttyS7        tty59      tty23  ram6      loop2               console
+ttyS6        tty58      tty22  ram5      loop1               char
+ttyS5        tty57      tty21  ram4      loop0               cdrw
+ttyS4        tty56      tty20  ram3      log                 cdrom
+ttyS31       tty55      tty2   ram2      lightnvm            bus
+ttyS30       tty54      tty19  ram15     kvm                 btrfs-control
+ttyS3        tty53      tty18  ram14     kmsg                bsg
+ttyS29       tty52      tty17  ram13     input               block
+ttyS28       tty51      tty16  ram12     initctl             autofs
+ttyS27       tty50      tty15  ram11     iio:device1         acpi_thermal_rel
+ttyS26       tty5       tty14  ram10     iio:device0
+
+/cdrom:
+
+/boot:
+vmlinuz-4.8.0-26-generic.efi.signed  initrd.img-4.8.0-26-generic
+vmlinuz-4.8.0-26-generic             initrd.img-4.8.0-22-generic
+vmlinuz-4.8.0-22-generic             grub
+System.map-4.8.0-26-generic          efi
+System.map-4.8.0-22-generic          config-4.8.0-26-generic
+memtest86+_multiboot.bin             config-4.8.0-22-generic
+memtest86+.elf                       abi-4.8.0-26-generic
+memtest86+.bin                       abi-4.8.0-22-generic
+
+/bin:
+znew                            ss             netstat     findmnt
+zmore                           sleep          netcat      fgrep
+zless                           sh.distrib     nc.openbsd  fgconsole
+zgrep                           sh             nc          false
+zforce                          setupcon       nano        egrep
+zfgrep                          setfont        mv          efibootmgr
+zegrep                          setfacl        mt-gnu      ed
+zdiff                           sed            mt          echo
+zcmp                            run-parts      mountpoint  dumpkeys
+zcat                            rnano          mount       domainname
+ypdomainname                    rmdir          more        dnsdomainname
+whiptail                        rm             mktemp      dmesg
+which                           red            mknod       dir
+wdctl                           readlink       mkdir       df
+vdir                            rbash          lsmod       dd
+unicode_start                   pwd            lsblk       date
+uncompress                      ps             ls          dash
+uname                           plymouth       lowntfs-3g  cpio
+umount                          ping6          loginctl    cp
+ulockmgr_server                 ping4          login       chvt
+udevadm                         ping           loadkeys    chown
+true                            pidof          ln          chmod
+touch                           openvt         lesspipe    chgrp
+tempfile                        open           lesskey     chacl
+tar                             ntfswipe       lessfile    cat
+tailf                           ntfsusermap    lessecho    bzmore
+systemd-tty-ask-password-agent  ntfstruncate   less        bzless
+systemd-tmpfiles                ntfssecaudit   kmod        bzip2recover
+systemd-sysusers                ntfsrecover    kill        bzip2
+systemd-notify                  ntfsmove       kbd_mode    bzgrep
+systemd-machine-id-setup        ntfsls         journalctl  bzfgrep
+systemd-inhibit                 ntfsinfo       ip          bzexe
+systemd-hwdb                    ntfsfix        hostname    bzegrep
+systemd-escape                  ntfsfallocate  hciconfig   bzdiff
+systemd-ask-password            ntfscmp        gzip        bzcmp
+systemd                         ntfscluster    gzexe       bzcat
+systemctl                       ntfscat        gunzip      busybox
+sync                            ntfs-3g.probe  grep        bunzip2
+su                              ntfs-3g        getfacl     bash
+stty                            nisdomainname  fusermount
+static-sh                       networkctl     fuser
+vellunz@Zee:~$ ls -r /**
+/vmlinuz  /initrd.img.old  /initrd.img  /core
+
+/var:
+tmp    snap  opt      mail  lock   lib    cache
+spool  run   metrics  log   local  crash  backups
+
+/usr:
+src  share  sbin  local  lib32  lib  include  games  @DATADIRNAME@  bin
+
+/tmp:
+tmphge3mv79
+systemd-private-8abc013305d944a691af1bb764d6840e-systemd-timesyncd.service-DKZUdO
+ssh-yUTS0t3qnyQL
+ssh-Q7O3Wn6ViWH5
+mozilla_vellunz0
+hsperfdata_vellunz
+gameoverlayui.log.last
+gameoverlayui.log
+dumps
+config-err-VNHCq4
+
+/sys:
+power   kernel      fs        devices  class  block
+module  hypervisor  firmware  dev      bus
+
+/srv:
+
+/snap:
+
+/sbin:
+zramctl                ntfslabel          ifquery
+xtables-multi          ntfscp             ifdown
+wpa_supplicant         ntfsclone          ifconfig
+wpa_cli                nameif             hwclock
+wpa_action             mount.ntfs-3g      hdparm
+wipefs                 mount.ntfs         halt
+ureadahead             mount.lowntfs-3g   getty
+unix_update            mount.fuse         get-quirk-options
+unix_chkpwd            modprobe           getpcaps
+umount.udisks2         modinfo            getcap
+udevadm                mkswap             fstrim
+u-d-c-print-pci-ids    mkntfs             fstab-decode
+tune2fs                mkhomedir_helper   fsfreeze
+tipc                   mkfs.vfat          fsck.vfat
+telinit                mkfs.ntfs          fsck.msdos
+tc                     mkfs.msdos         fsck.minix
+sysctl                 mkfs.minix         fsck.fat
+switch_root            mkfs.fat           fsck.ext4dev
+swapon                 mkfs.ext4dev       fsck.ext4
+swapoff                mkfs.ext4          fsck.ext3
+swaplabel              mkfs.ext3          fsck.ext2
+sulogin                mkfs.ext2          fsck.cramfs
+start-stop-daemon      mkfs.cramfs        fsck
+slattach               mkfs.bfs           findfs
+shutdown               mkfs               fdisk
+shadowconfig           mke2fs             fatlabel
+sfdisk                 mkdosfs            e2undo
+setvtrgb               mii-tool           e2label
+setcap                 lspcmcia           e2image
+runuser                lsmod              e2fsck
+runlevel               losetup            dumpe2fs
+rtmon                  logsave            dosfslabel
+rtacct                 ldconfig.real      dosfsck
+route                  ldconfig           dmstats
+rmmod                  killall5           dmsetup
+resolvconf             kbdrate            dhclient-script
+resize2fs              iwspy              dhclient
+regdbdump              iwpriv             depmod
+reboot                 iwlist             debugfs
+raw                    iwgetid            ctrlaltdel
+rarp                   iwevent            create-uvm-dev-node
+prime-switch           iwconfig           crda
+prime-offload          iw                 chcpu
+poweroff               isosize            cfdisk
+plymouthd              iptunnel           capsh
+plipconfig             iptables-save      bridge
+pivot_root             iptables-restore   blockdev
+pccardctl              iptables           blkid
+partprobe              ipmaddr            blkdiscard
+parted                 ip6tables-save     blkdeactivate
+pam_tally2             ip6tables-restore  badblocks
+pam_tally              ip6tables          apparmor_parser
+pam_extrausers_update  ip                 apm_available
+pam_extrausers_chkpwd  installkernel      agetty
+on_ac_power            insmod             acpi_available
+ntfsundelete           init
+ntfsresize             ifup
+
+/run:
+wpa_supplicant                        shm                  initramfs
+uuidd                                 sendsigs.omit.d      initctl
+utmp                                  rsyslogd.pid         fsck
+user                                  resolvconf           dhclient-wlp3s0.pid
+udisks2                               plymouth             dbus
+udev                                  nvidia-persistenced  cups
+u-d-c-nvidia-was-loaded               NetworkManager       crond.reboot
+u-d-c-gpu-0000:04:00.0-0x10de-0x1341  network              crond.pid
+tmpfiles.d                            mount                console-setup
+systemd                               log                  avahi-daemon
+synaptic.socket                       lock                 alsa
+sudo                                  lightdm.pid          agetty.reload
+snapd.socket                          lightdm              acpid.socket
+snapd-snap.socket                     irqbalance.pid       acpid.pid
+ls: cannot open directory '/root': Permission denied
+
+/proc:
+zoneinfo           meminfo      cgroups    728   43    270   191   1362   11857
+vmstat             mdstat       bus        727   42    27    190   13557  11827
+vmallocinfo        locks        buddyinfo  724   41    261   19    13535  11808
+version_signature  loadavg      asound     723   406   26    189   13534  117
+version            kpageflags   acpi       720   404   25    184   13533  116
+uptime             kpagecount   98         718   403   2471  18    1353   115
+tty                kpagecgroup  97         707   40    24    16    13506  114
+timer_stats        kmsg         961        701   39    2372  1533  1349   113
+timer_list         key-users    96         700   38    234   15    13472  112
+thread-self        keys         952        7     3779  233   1475  1346   111
+sysvipc            kcore        95         632   3768  231   147   1343   110
+sysrq-trigger      kallsyms     94         602   3753  22    1469  1341   11
+sys                irq          932        587   3726  212   1464  13407  10956
+swaps              ioports      93         574   37    210   146   13397  109
+stat               iomem        926        565   361   21    1455  1331   1088
+softirqs           interrupts   92         52    36    207   1451  1329   108
+slabinfo           fs           91         51    359   205   1449  13283  1078
+self               filesystems  9          50    35    203   1438  1325   107
+scsi               fb           879        5     34    202   1432  1312   1066
+schedstat          execdomains  873        4996  3394  201   1419  1307   106
+sched_debug        driver       8          46    33    200   14    13     105
+partitions         dma          7835       45    32    20    1397  1296   104
+pagetypeinfo       diskstats    774        440   3116  2     1385  1251   103
+net                devices      766        44    31    196   1374  124    102
+mtrr               crypto       761        436   300   195   1372  1238   101
+mounts             cpuinfo      732        434   30    194   1371  1230   100
+modules            consoles     730        433   3     193   1368  1229   10
+misc               cmdline      729        432   28    192   1364  12     1
+
+/opt:
+
+/mnt:
+
+/media:
+vellunz
+ls: cannot open directory '/lost+found': Permission denied
+
+/lib64:
+ld-linux-x86-64.so.2
+
+/lib32:
+libutil.so.1            libnss_nis-2.24.so     libdl-2.24.so
+libutil-2.24.so         libnss_hesiod.so.2     libc.so.6
+libthread_db.so.1       libnss_hesiod-2.24.so  libcrypt.so.1
+libthread_db-1.0.so     libnss_files.so.2      libcrypt-2.24.so
+libSegFault.so          libnss_files-2.24.so   libcidn.so.1
+librt.so.1              libnss_dns.so.2        libcidn-2.24.so
+librt-2.24.so           libnss_dns-2.24.so     libc-2.24.so
+libresolv.so.2          libnss_compat.so.2     libBrokenLocale.so.1
+libresolv-2.24.so       libnss_compat-2.24.so  libBrokenLocale-2.24.so
+libpthread.so.0         libnsl.so.1            libanl.so.1
+libpthread-2.24.so      libnsl-2.24.so         libanl-2.24.so
+libpcprofile.so         libm.so.6              ld-linux.so.2
+libnss_nis.so.2         libmemusage.so         ld-2.24.so
+libnss_nisplus.so.2     libm-2.24.so
+libnss_nisplus-2.24.so  libdl.so.2
+
+/lib:
+x86_64-linux-gnu  recovery-mode  ld-linux.so.2                         firmware
+ufw               nvidia-367     klibc-8kba-ZlvkVvRx_mp57c4ZzwLfNs.so  crda
+udev              netplan        init                                  cpp
+terminfo          modules        ifupdown                              apparmor
+systemd           modprobe.d     i386-linux-gnu
+resolvconf        lsb            hdparm
+
+/home:
+vellunz
+
+/etc:
+zsh_command_not_found  presage.xml              hp
+xml                    ppp                      hosts.deny
+xdg                    popularity-contest.conf  hosts.allow
+X11                    polkit-1                 hosts
+wvdial.conf            pnm2ppa.conf             hostname
+wpa_supplicant         pm                       host.conf
+wildmidi               perl                     hdparm.conf
+wgetrc                 pcmcia                   guest-session
+vtrgb                  passwd-                  gtk-3.0
+vim                    passwd                   gtk-2.0
+vdpau_wrapper.cfg      papersize                gss
+usb_modeswitch.d       pam.d                    gshadow-
+usb_modeswitch.conf    pam.conf                 gshadow
+UPower                 PackageKit               grub.d
+update-notifier        os-release               group-
+update-motd.d          opt                      group
+update-manager         OpenCL                   groff
+updatedb.conf          openal                   gnome-vfs-2.0
+uniconf.conf           nsswitch.conf            gnome-system-tools
+ufw                    newt                     gnome
+udisks2                networks                 ghostscript
+udev                   NetworkManager           gconf
+ucf.conf               network                  gai.conf
+tmpfiles.d             netplan                  fuse.conf
+timidity               nanorc                   fstab
+timezone               mysql                    fonts
+terminfo               mtools.conf              fish
+systemd                mtab                     firefox
+sysctl.d               mplayer                  ffserver.conf
+sysctl.conf            modules-load.d           environment
+sudoers.d              modules                  emacs
+sudoers                modprobe.d               drirc
+subuid-                mke2fs.conf              dpkg
+subuid                 mime.types               dnsmasq.d
+subgid-                menu-methods             dkms
+subgid                 manpath.config           dictionaries-common
+ssl                    mailcap.order            dhcp
+ssh                    mailcap                  depmod.d
+sound                  magic.mime               deluser.conf
+skel                   magic                    default
+shells                 machine-id               debian_version
+shadow-                lxdm                     debconf.conf
+shadow                 ltrace.conf              dbus-1
+sgml                   lsb-release              cupshelpers
+services               logrotate.d              cups
+sensors.d              logrotate.conf           cron.weekly
+sensors3.conf          login.defs               crontab
+selinux                logcheck                 cron.monthly
+security               localtime                cron.hourly
+securetty              locale.gen               cron.daily
+sane.d                 locale.alias             cron.d
+rsyslog.d              lightdm                  console-setup
+rsyslog.conf           libreoffice              chatscripts
+rpc                    libpaper.d               calendar
+rmt                    libnl-3                  ca-certificates.conf
+resolv.conf            libgda-5.0               ca-certificates
+resolvconf             libaudit.conf            bonobo-activation
+rcS.d                  legal                    bluetooth
+rc6.d                  ld.so.conf.d             binfmt.d
+rc5.d                  ld.so.conf               bindresvport.blacklist
+rc4.d                  ld.so.cache              bash_completion.d
+rc3.d                  ldap                     bash_completion
+rc2.d                  kerneloops.conf          bash.bashrc
+rc1.d                  kernel-img.conf          avahi
+rc0.d                  kernel                   apt
+python3.5              java-8-openjdk           appstream.conf
+python3                issue.net                apport
+python2.7              issue                    apparmor.d
+python                 iproute2                 apparmor
+purple                 inputrc                  apm
+pulse                  initramfs-tools          anacrontab
+protocols              init.d                   alternatives
+profile.d              init                     adduser.conf
+profile                ImageMagick-6            acpi
+prime-discrete         ifplugd
+
+/dev:
+zero         ttyS25     tty49  tty13     ram1                i2c-8
+video0       ttyS24     tty48  tty12     ram0                i2c-7
+vhost-net    ttyS23     tty47  tty11     pts                 i2c-6
+vhci         ttyS22     tty46  tty10     ptmx                i2c-5
+vga_arbiter  ttyS21     tty45  tty1      psaux               i2c-4
+vfio         ttyS20     tty44  tty0      ppp                 i2c-3
+vcsa6        ttyS2      tty43  tty       port                i2c-2
+vcsa5        ttyS19     tty42  tpm0      nvidia-uvm          i2c-1
+vcsa4        ttyS18     tty41  stdout    nvidia-modeset      i2c-0
+vcsa3        ttyS17     tty40  stdin     nvidiactl           hwrng
+vcsa2        ttyS16     tty4   stderr    nvidia0             hugepages
+vcsa1        ttyS15     tty39  sr0       null                hpet
+vcsa         ttyS14     tty38  snd       network_throughput  hidraw0
+vcs6         ttyS13     tty37  snapshot  network_latency     gpiochip0
+vcs5         ttyS12     tty36  shm       net                 fuse
+vcs4         ttyS11     tty35  sg1       mqueue              full
+vcs3         ttyS10     tty34  sg0       memory_bandwidth    fd
+vcs2         ttyS1      tty33  sda3      mem                 fb0
+vcs1         ttyS0      tty32  sda2      mei0                ecryptfs
+vcs          ttyprintk  tty31  sda1      media0              dvdrw
+v4l          tty9       tty30  sda       mcelog              dvd
+userio       tty8       tty3   rtc0      mapper              drm_dp_aux0
+usb          tty7       tty29  rtc       loop-control        dri
+urandom      tty63      tty28  rfkill    loop7               disk
+uinput       tty62      tty27  random    loop6               cuse
+uhid         tty61      tty26  ram9      loop5               cpu_dma_latency
+ttyS9        tty60      tty25  ram8      loop4               cpu
+ttyS8        tty6       tty24  ram7      loop3               core
+ttyS7        tty59      tty23  ram6      loop2               console
+ttyS6        tty58      tty22  ram5      loop1               char
+ttyS5        tty57      tty21  ram4      loop0               cdrw
+ttyS4        tty56      tty20  ram3      log                 cdrom
+ttyS31       tty55      tty2   ram2      lightnvm            bus
+ttyS30       tty54      tty19  ram15     kvm                 btrfs-control
+ttyS3        tty53      tty18  ram14     kmsg                bsg
+ttyS29       tty52      tty17  ram13     input               block
+ttyS28       tty51      tty16  ram12     initctl             autofs
+ttyS27       tty50      tty15  ram11     iio:device1         acpi_thermal_rel
+ttyS26       tty5       tty14  ram10     iio:device0
+
+/cdrom:
+
+/boot:
+vmlinuz-4.8.0-26-generic.efi.signed  initrd.img-4.8.0-26-generic
+vmlinuz-4.8.0-26-generic             initrd.img-4.8.0-22-generic
+vmlinuz-4.8.0-22-generic             grub
+System.map-4.8.0-26-generic          efi
+System.map-4.8.0-22-generic          config-4.8.0-26-generic
+memtest86+_multiboot.bin             config-4.8.0-22-generic
+memtest86+.elf                       abi-4.8.0-26-generic
+memtest86+.bin                       abi-4.8.0-22-generic
+
+/bin:
+znew                            ss             netstat     findmnt
+zmore                           sleep          netcat      fgrep
+zless                           sh.distrib     nc.openbsd  fgconsole
+zgrep                           sh             nc          false
+zforce                          setupcon       nano        egrep
+zfgrep                          setfont        mv          efibootmgr
+zegrep                          setfacl        mt-gnu      ed
+zdiff                           sed            mt          echo
+zcmp                            run-parts      mountpoint  dumpkeys
+zcat                            rnano          mount       domainname
+ypdomainname                    rmdir          more        dnsdomainname
+whiptail                        rm             mktemp      dmesg
+which                           red            mknod       dir
+wdctl                           readlink       mkdir       df
+vdir                            rbash          lsmod       dd
+unicode_start                   pwd            lsblk       date
+uncompress                      ps             ls          dash
+uname                           plymouth       lowntfs-3g  cpio
+umount                          ping6          loginctl    cp
+ulockmgr_server                 ping4          login       chvt
+udevadm                         ping           loadkeys    chown
+true                            pidof          ln          chmod
+touch                           openvt         lesspipe    chgrp
+tempfile                        open           lesskey     chacl
+tar                             ntfswipe       lessfile    cat
+tailf                           ntfsusermap    lessecho    bzmore
+systemd-tty-ask-password-agent  ntfstruncate   less        bzless
+systemd-tmpfiles                ntfssecaudit   kmod        bzip2recover
+systemd-sysusers                ntfsrecover    kill        bzip2
+systemd-notify                  ntfsmove       kbd_mode    bzgrep
+systemd-machine-id-setup        ntfsls         journalctl  bzfgrep
+systemd-inhibit                 ntfsinfo       ip          bzexe
+systemd-hwdb                    ntfsfix        hostname    bzegrep
+systemd-escape                  ntfsfallocate  hciconfig   bzdiff
+systemd-ask-password            ntfscmp        gzip        bzcmp
+systemd                         ntfscluster    gzexe       bzcat
+systemctl                       ntfscat        gunzip      busybox
+sync                            ntfs-3g.probe  grep        bunzip2
+su                              ntfs-3g        getfacl     bash
+stty                            nisdomainname  fusermount
+static-sh                       networkctl     fuser
+vellunz@Zee:~$ clear
+
+vellunz@Zee:~$ pstree
+systemd─┬─ModemManager─┬─{gdbus}
+        │              └─{gmain}
+        ├─NetworkManager─┬─dhclient
+        │                ├─dnsmasq
+        │                ├─{gdbus}
+        │                └─{gmain}
+        ├─accounts-daemon─┬─{gdbus}
+        │                 └─{gmain}
+        ├─acpid
+        ├─agetty
+        ├─at-spi-bus-laun─┬─dbus-daemon
+        │                 ├─{dconf worker}
+        │                 ├─{gdbus}
+        │                 └─{gmain}
+        ├─at-spi2-registr─┬─{gdbus}
+        │                 └─{gmain}
+        ├─avahi-daemon───avahi-daemon
+        ├─bluetoothd
+        ├─cron
+        ├─cupsd
+        ├─dbus-daemon
+        ├─irqbalance
+        ├─light-locker─┬─{dconf worker}
+        │              ├─{gdbus}
+        │              └─{gmain}
+        ├─lightdm─┬─Xorg
+        │         ├─lightdm─┬─lxsession─┬─lxpanel─┬─firefox─┬─{Cache I/O}
+        │         │         │           │         │         ├─{Cache2 I/O}
+        │         │         │           │         │         ├─{Cert Verify}
+        │         │         │           │         │         ├─{Compositor}
+        │         │         │           │         │         ├─{DNS Resolver #2}
+        │         │         │           │         │         ├─{DNS Resolver #4}
+        │         │         │           │         │         ├─{DNS Resolver #5}
+        │         │         │           │         │         ├─{DNS Resolver #6}
+        │         │         │           │         │         ├─{DOM Worker}
+        │         │         │           │         │         ├─{DataStorage}
+        │         │         │           │         │         ├─{GMPThread}
+        │         │         │           │         │         ├─{Gecko_IOThread}
+        │         │         │           │         │         ├─{HTML5 Parser}
+        │         │         │           │         │         ├─{Hang Monitor}
+        │         │         │           │         │         ├─{IPDL Background}
+        │         │         │           │         │         ├─{ImageBridgeChil}
+        │         │         │           │         │         ├─{ImageIO}
+        │         │         │           │         │         ├─{ImgDecoder #1}
+        │         │         │           │         │         ├─{ImgDecoder #2}
+        │         │         │           │         │         ├─{ImgDecoder #3}
+        │         │         │           │         │         ├─8*[{JS Helper}]
+        │         │         │           │         │         ├─{JS Watchdog}
+        │         │         │           │         │         ├─{Link Monitor}
+        │         │         │           │         │         ├─{Proxy R~olution}
+        │         │         │           │         │         ├─{Socket Thread}
+        │         │         │           │         │         ├─{SoftwareVsyncTh}
+        │         │         │           │         │         ├─{Timer}
+        │         │         │           │         │         ├─{URL Classifier}
+        │         │         │           │         │         ├─{dconf worker}
+        │         │         │           │         │         ├─{gdbus}
+        │         │         │           │         │         ├─{gmain}
+        │         │         │           │         │         ├─{localStorage DB}
+        │         │         │           │         │         ├─{mozStorage #1}
+        │         │         │           │         │         ├─{mozStorage #2}
+        │         │         │           │         │         ├─{mozStorage #3}
+        │         │         │           │         │         ├─{mozStorage #4}
+        │         │         │           │         │         ├─{mozStorage #5}
+        │         │         │           │         │         └─{mozStorage #6}
+        │         │         │           │         ├─{gdbus}
+        │         │         │           │         ├─{gmain}
+        │         │         │           │         └─{menu-cache-io}
+        │         │         │           ├─openbox─┬─{gdbus}
+        │         │         │           │         └─{gmain}
+        │         │         │           ├─pcmanfm─┬─{gdbus}
+        │         │         │           │         └─{gmain}
+        │         │         │           ├─ssh-agent
+        │         │         │           ├─x-terminal-emul─┬─bash───pstree
+        │         │         │           │                 ├─gnome-pty-helpe
+        │         │         │           │                 ├─{gdbus}
+        │         │         │           │                 └─{gmain}
+        │         │         │           ├─{gdbus}
+        │         │         │           └─{gmain}
+        │         │         ├─{gdbus}
+        │         │         └─{gmain}
+        │         ├─{gdbus}
+        │         └─{gmain}
+        ├─menu-cached─┬─{gdbus}
+        │             └─{gmain}
+        ├─nm-applet─┬─{dconf worker}
+        │           ├─{gdbus}
+        │           └─{gmain}
+        ├─nvidia-persiste
+        ├─packagekitd─┬─{gdbus}
+        │             └─{gmain}
+        ├─polkitd─┬─{gdbus}
+        │         └─{gmain}
+        ├─pulseaudio─┬─{alsa-sink-ALC32}
+        │            ├─{alsa-sink-HDMI }
+        │            └─{alsa-source-ALC}
+        ├─python3───{gmain}
+        ├─rsyslogd─┬─{in:imklog}
+        │          ├─{in:imuxsock}
+        │          └─{rs:main Q:Reg}
+        ├─snapd───8*[{snapd}]
+        ├─ssh-agent
+        ├─systemd─┬─(sd-pam)
+        │         ├─dbus-daemon
+        │         ├─dconf-service─┬─{gdbus}
+        │         │               └─{gmain}
+        │         ├─gconfd-2
+        │         ├─gvfs-afc-volume─┬─{gdbus}
+        │         │                 ├─{gmain}
+        │         │                 └─{gvfs-afc-volume}
+        │         ├─gvfs-goa-volume─┬─{gdbus}
+        │         │                 └─{gmain}
+        │         ├─gvfs-gphoto2-vo─┬─{gdbus}
+        │         │                 └─{gmain}
+        │         ├─gvfs-mtp-volume─┬─{gdbus}
+        │         │                 └─{gmain}
+        │         ├─gvfs-udisks2-vo─┬─{gdbus}
+        │         │                 └─{gmain}
+        │         ├─gvfsd─┬─{gdbus}
+        │         │       └─{gmain}
+        │         ├─gvfsd-dnssd─┬─{gdbus}
+        │         │             └─{gmain}
+        │         ├─gvfsd-fuse─┬─{gdbus}
+        │         │            ├─{gmain}
+        │         │            ├─{gvfs-fuse-sub}
+        │         │            └─2*[{gvfsd-fuse}]
+        │         ├─gvfsd-metadata─┬─{gdbus}
+        │         │                └─{gmain}
+        │         ├─gvfsd-network─┬─{dconf worker}
+        │         │               ├─{gdbus}
+        │         │               └─{gmain}
+        │         ├─gvfsd-smb-brows─┬─{dconf worker}
+        │         │                 ├─{gdbus}
+        │         │                 └─{gmain}
+        │         ├─gvfsd-trash─┬─{gdbus}
+        │         │             └─{gmain}
+        │         ├─indicator-appli─┬─{gdbus}
+        │         │                 └─{gmain}
+        │         └─xfconfd
+        ├─systemd-journal
+        ├─systemd-logind
+        ├─systemd-resolve
+        ├─systemd-timesyn───{sd-resolve}
+        ├─systemd-udevd
+        ├─udisksd─┬─{cleanup}
+        │         ├─{gdbus}
+        │         ├─{gmain}
+        │         └─{probing-thread}
+        ├─update-notifier─┬─{dconf worker}
+        │                 ├─{gdbus}
+        │                 └─{gmain}
+        ├─upowerd─┬─{gdbus}
+        │         └─{gmain}
+        ├─whoopsie─┬─{gdbus}
+        │          └─{gmain}
+        ├─wpa_supplicant
+        ├─xfce4-power-man─┬─{gdbus}
+        │                 └─{gmain}
+        └─xfce4-power-man
+vellunz@Zee:~$ 
